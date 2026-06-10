@@ -129,6 +129,22 @@ Sous Windows :
 .\scripts\analysis.ps1
 ```
 
+### Clang-Tidy
+
+```bash
+docker compose run --rm clang-tidy
+```
+
+Ce service exécute `clang-tidy` et génère un rapport HTML dans `reports/clang-tidy`.
+
+### Valgrind
+
+```bash
+docker compose run --rm valgrind
+```
+
+Ce service exécute le binaire de test sous Valgrind, produit un fichier XML et génère un rapport HTML dans `reports/valgrind`.
+
 ### Sanitizers
 
 ```bash
@@ -151,11 +167,12 @@ ctest --test-dir build --output-on-failure
 
 ### Jenkins dans Docker
 
-Le projet inclut désormais un service Jenkins dans `docker-compose.yml` et un `Jenkinsfile` à la racine.
+Le projet inclut désormais un service Jenkins dans `docker-compose.yml`, un `Dockerfile.jenkins`, et un `Jenkinsfile` à la racine.
 
 Démarrage du conteneur Jenkins :
 
 ```bash
+docker compose build jenkins
 docker compose up -d jenkins
 ```
 
@@ -165,7 +182,14 @@ Puis ouvrir l'interface Jenkins sur :
 http://localhost:8080
 ```
 
-Créez un job Pipeline/Multi-branch Pipeline pointant sur ce dépôt. Le pipeline utilisera le `Jenkinsfile` et exécutera les commandes :
+Créez un job `Pipeline` ou `Multibranch Pipeline` pointant sur ce dépôt. Dans la configuration :
+
+- `Definition` : `Pipeline script from SCM`
+- `SCM` : `Git`
+- `Repository URL` : l'URL de votre dépôt
+- `Script Path` : `Jenkinsfile`
+
+Le pipeline exécutera les services Docker Compose suivants :
 
 ```bash
 docker compose build
@@ -183,7 +207,13 @@ docker compose run --rm coverage
 docker compose run --rm sanitizers
 ```
 
-Les artefacts générés sont accessibles dans `reports/`.
+Les rapports HTML générés sont accessibles dans :
+
+- `reports/googletest/index.html`
+- `reports/coverage/index.html`
+- `reports/cppcheck/index.html`
+- `reports/clang-tidy/index.html`
+- `reports/valgrind/index.html`
 
 > Pour déclencher l'exécution sur un commit, configurez un webhook Git ou activez la détection périodique dans Jenkins.
 
@@ -227,6 +257,8 @@ Le fichier `docker-compose.yml` définit plusieurs services spécialisés :
 | `cpp-tests` | configure, compile et lance les tests |
 | `coverage` | compile avec couverture et génère un rapport HTML |
 | `static-analysis` | lance `cppcheck` |
+| `clang-tidy` | exécute clang-tidy et génère un rapport HTML |
+| `valgrind` | exécute le binaire de test sous Valgrind et génère un rapport HTML |
 | `sanitizers` | compile avec AddressSanitizer et UndefinedBehaviorSanitizer |
 | `shell` | ouvre un shell dans l'environnement C++ |
 
