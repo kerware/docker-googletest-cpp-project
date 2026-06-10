@@ -3,7 +3,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: docker-googletest-cpp:latest
     container_name: cpp-googletest-runner
     working_dir: /workspace
     command: >
@@ -18,7 +17,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: docker-googletest-cpp:latest
     working_dir: /workspace
     command: >
       bash -lc "mkdir -p reports/coverage && cmake -S . -B build-coverage -G Ninja -DCMAKE_BUILD_TYPE=Debug -DENABLE_COVERAGE=ON &&
@@ -32,7 +30,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: docker-googletest-cpp:latest
     working_dir: /workspace
     command: >
       bash -lc "mkdir -p reports/cppcheck &&
@@ -45,7 +42,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: docker-googletest-cpp:latest
     working_dir: /workspace
     command: >
       bash -lc 'chmod +x scripts/run-clang-tidy-inside.sh && scripts/run-clang-tidy-inside.sh'
@@ -56,7 +52,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: docker-googletest-cpp:latest
     working_dir: /workspace
     command: >
       bash -lc "set -euo pipefail; mkdir -p reports/valgrind && cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Debug && cmake --build build --parallel && \
@@ -71,7 +66,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: docker-googletest-cpp:latest
     working_dir: /workspace
     command: >
       bash -lc "cmake -S . -B build-asan -G Ninja -DCMAKE_BUILD_TYPE=Debug -DENABLE_SANITIZERS=ON &&
@@ -84,7 +78,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: docker-googletest-cpp:latest
     working_dir: /workspace
     command: bash
     stdin_open: true
