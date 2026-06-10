@@ -1,0 +1,112 @@
+services:
+  cpp-tests:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: docker-googletest-cpp:latest
+    container_name: cpp-googletest-runner
+    working_dir: /workspace
+    command: >
+      bash -lc "mkdir -p reports reports/googletest && cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Debug &&
+                cmake --build build --parallel &&
+                ctest --test-dir build --output-on-failure --output-junit /workspace/reports/ctest-junit.xml &&
+                python3 scripts/junit-to-html.py /workspace/reports/ctest-junit.xml reports/googletest"
+    volumes:
+      - .:/workspace
+
+  coverage:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: docker-googletest-cpp:latest
+    working_dir: /workspace
+    command: >
+      bash -lc "mkdir -p reports/coverage && cmake -S . -B build-coverage -G Ninja -DCMAKE_BUILD_TYPE=Debug -DENABLE_COVERAGE=ON &&
+                cmake --build build-coverage --parallel &&
+                ctest --test-dir build-coverage --output-on-failure &&
+                gcovr -r . --html --html-details -o reports/coverage/index.html --exclude '.*_deps.*' --exclude 'tests/.*'"
+    volumes:
+      - .:/workspace
+
+  static-analysis:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: docker-googletest-cpp:latest
+    working_dir: /workspace
+    command: >
+      bash -lc "mkdir -p reports/cppcheck &&
+                cppcheck --enable=warning,style,performance,portability --std=c++17 --suppress=missingIncludeSystem --xml-version=2 include src tests 2> reports/cppcheck/cppcheck.xml &&
+                cppcheck-htmlreport --file=reports/cppcheck/cppcheck.xml --report-dir=reports/cppcheck --source-dir=/workspace --title='Cppcheck Report'"
+    volumes:
+      - .:/workspace
+
+  clang-tidy:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: docker-googletest-cpp:latest
+    working_dir: /workspace
+    command: >
+      bash -lc 'chmod +x scripts/run-clang-tidy-inside.sh && scripts/run-clang-tidy-inside.sh'
+    volumes:
+      - .:/workspace
+
+  valgrind:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: docker-googletest-cpp:latest
+    working_dir: /workspace
+    command: >
+      bash -lc "set -euo pipefail; mkdir -p reports/valgrind && cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Debug && cmake --build build --parallel && \
+                if [ -x build/calculator_tests ]; then \
+                  valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes --num-callers=50 --error-exitcode=1 --xml=yes --xml-file=reports/valgrind/valgrind.xml build/calculator_tests || true; \
+                  python3 scripts/valgrind-xml-to-html.py reports/valgrind/valgrind.xml reports/valgrind; \
+                else echo 'Test binary not found: build/calculator_tests'; fi"
+    volumes:
+      - .:/workspace
+
+  sanitizers:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: docker-googletest-cpp:latest
+    working_dir: /workspace
+    command: >
+      bash -lc "cmake -S . -B build-asan -G Ninja -DCMAKE_BUILD_TYPE=Debug -DENABLE_SANITIZERS=ON &&
+                cmake --build build-asan --parallel &&
+                ctest --test-dir build-asan --output-on-failure"
+    volumes:
+      - .:/workspace
+
+  shell:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: docker-googletest-cpp:latest
+    working_dir: /workspace
+    command: bash
+    stdin_open: true
+    tty: true
+    volumes:
+      - .:/workspace
+
+  jenkins:
+    build:
+      context: .
+      dockerfile: Dockerfile.jenkins
+    image: docker-googletest-cpp-jenkins:latest
+    user: root
+    ports:
+      - 8080:8080
+      - 50000:50000
+    environment:
+      - JAVA_OPTS=-Djenkins.install.runSetupWizard=false
+    volumes:
+      - jenkins_home:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock
+      - .:/workspace:cached
+
+volumes:
+  jenkins_home:

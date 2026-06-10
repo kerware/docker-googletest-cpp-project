@@ -1,0 +1,115 @@
+{
+  "tests": 16,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "CalculatorTest",
+      "tests": 5,
+      "testsuite": [
+        {
+          "name": "AddsTwoPositiveNumbers",
+          "file": "C:\\projets\\docker-googletest-cpp-project\\tests\\CalculatorTest.cpp",
+          "line": 6
+        },
+        {
+          "name": "SubtractsNumbers",
+          "file": "C:\\projets\\docker-googletest-cpp-project\\tests\\CalculatorTest.cpp",
+          "line": 11
+        },
+        {
+          "name": "MultipliesByZero",
+          "file": "C:\\projets\\docker-googletest-cpp-project\\tests\\CalculatorTest.cpp",
+          "line": 16
+        },
+        {
+          "name": "DividesTwoNumbers",
+          "file": "C:\\projets\\docker-googletest-cpp-project\\tests\\CalculatorTest.cpp",
+          "line": 21
+        },
+        {
+          "name": "ThrowsWhenDividingByZero",
+          "file": "C:\\projets\\docker-googletest-cpp-project\\tests\\CalculatorTest.cpp",
+          "line": 26
+        }
+      ]
+    },
+    {
+      "name": "ExpressionParserTest",
+      "tests": 4,
+      "testsuite": [
+        {
+          "name": "EvaluatesAdditionExpression",
+          "file": "C:\\projets\\docker-googletest-cpp-project\\tests\\ExpressionParserTest.cpp",
+          "line": 6
+        },
+        {
+          "name": "IgnoresSpaces",
+          "file": "C:\\projets\\docker-googletest-cpp-project\\tests\\ExpressionParserTest.cpp",
+          "line": 11
+        },
+        {
+          "name": "HandlesNegativeLeftOperand",
+          "file": "C:\\projets\\docker-googletest-cpp-project\\tests\\ExpressionParserTest.cpp",
+          "line": 16
+        },
+        {
+          "name": "RejectsUnknownExpression",
+          "file": "C:\\projets\\docker-googletest-cpp-project\\tests\\ExpressionParserTest.cpp",
+          "line": 21
+        }
+      ]
+    },
+    {
+      "name": "CalculatorServiceMockTest",
+      "tests": 2,
+      "testsuite": [
+        {
+          "name": "LogsSuccessWhenExpressionIsValid",
+          "file": "C:\\projets\\docker-googletest-cpp-project\\tests\\CalculatorMockTest.cpp",
+          "line": 14
+        },
+        {
+          "name": "LogsFailureWhenExpressionIsInvalid",
+          "file": "C:\\projets\\docker-googletest-cpp-project\\tests\\CalculatorMockTest.cpp",
+          "line": 23
+        }
+      ]
+    },
+    {
+      "name": "NominalExpressions\/ExpressionParameterizedTest",
+      "tests": 5,
+      "testsuite": [
+        {
+          "name": "EvaluatesExpression\/expr_1_2",
+          "value_param": "48-byte object <60-DF 03-EA 54-01 00-00 31-2B 32-00 00-00 00-00 00-00 00-00 00-00 00-00 03-00 00-00 00-00 00-00 0F-00 00-00 00-00 00-00 03-00 00-00 CD-CD CD-CD>",
+          "file": "C:\\projets\\docker-googletest-cpp-project\\tests\\CalculatorParameterizedTest.cpp",
+          "line": 14
+        },
+        {
+          "name": "EvaluatesExpression\/expr_10_4",
+          "value_param": "48-byte object <30-09 04-EA 54-01 00-00 31-30 2D-34 00-00 00-00 00-00 00-00 00-00 00-00 04-00 00-00 00-00 00-00 0F-00 00-00 00-00 00-00 06-00 00-00 CD-CD CD-CD>",
+          "file": "C:\\projets\\docker-googletest-cpp-project\\tests\\CalculatorParameterizedTest.cpp",
+          "line": 14
+        },
+        {
+          "name": "EvaluatesExpression\/expr_6_7",
+          "value_param": "48-byte object <F0-07 04-EA 54-01 00-00 36-2A 37-00 00-00 00-00 00-00 00-00 00-00 00-00 03-00 00-00 00-00 00-00 0F-00 00-00 00-00 00-00 2A-00 00-00 CD-CD CD-CD>",
+          "file": "C:\\projets\\docker-googletest-cpp-project\\tests\\CalculatorParameterizedTest.cpp",
+          "line": 14
+        },
+        {
+          "name": "EvaluatesExpression\/expr_20_5",
+          "value_param": "48-byte object <C0-0A 04-EA 54-01 00-00 32-30 2F-35 00-00 00-00 00-00 00-00 00-00 00-00 04-00 00-00 00-00 00-00 0F-00 00-00 00-00 00-00 04-00 00-00 CD-CD CD-CD>",
+          "file": "C:\\projets\\docker-googletest-cpp-project\\tests\\CalculatorParameterizedTest.cpp",
+          "line": 14
+        },
+        {
+          "name": "EvaluatesExpression\/expr__8_2",
+          "value_param": "48-byte object <80-09 04-EA 54-01 00-00 2D-38 2F-32 00-00 00-00 00-00 00-00 00-00 00-00 04-00 00-00 00-00 00-00 0F-00 00-00 00-00 00-00 FC-FF FF-FF CD-CD CD-CD>",
+          "file": "C:\\projets\\docker-googletest-cpp-project\\tests\\CalculatorParameterizedTest.cpp",
+          "line": 14
+        }
+      ]
+    }
+  ]
+}

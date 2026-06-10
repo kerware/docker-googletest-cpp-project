@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::copy_if algorithm instead of a raw loop." verbose="Consider using std::copy_if algorithm instead of a raw loop." cwe="398" file0="src/ExpressionParser.cpp">
+            <location file="src/ExpressionParser.cpp" line="14" column="19"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::replace_if algorithm instead of a raw loop." verbose="Consider using std::replace_if algorithm instead of a raw loop." cwe="398" file0="tests/CalculatorParameterizedTest.cpp">
+            <location file="tests/CalculatorParameterizedTest.cpp" line="25" column="23"/>
+        </error>
+    </errors>
+</results>

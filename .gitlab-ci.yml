@@ -1,0 +1,67 @@
+stages:
+  - test
+  - quality
+
+variables:
+  DOCKER_DRIVER: overlay2
+
+cpp_tests:
+  stage: test
+  image: docker:27
+  services:
+    - docker:27-dind
+  before_script:
+    - docker version
+    - docker compose version
+  script:
+    - docker compose run --rm cpp-tests
+  artifacts:
+    when: always
+    paths:
+      - reports/
+    reports:
+      junit: reports/ctest-junit.xml
+
+static_analysis:
+  stage: quality
+  image: docker:27
+  services:
+    - docker:27-dind
+  script:
+    - docker compose run --rm static-analysis
+
+clang_tidy:
+  stage: quality
+  image: docker:27
+  services:
+    - docker:27-dind
+  script:
+    - docker compose run --rm clang-tidy
+  artifacts:
+    when: always
+    paths:
+      - reports/clang-tidy/
+
+valgrind:
+  stage: quality
+  image: docker:27
+  services:
+    - docker:27-dind
+  script:
+    - docker compose run --rm valgrind
+  artifacts:
+    when: always
+    paths:
+      - reports/valgrind/
+
+coverage:
+  stage: quality
+  image: docker:27
+  services:
+    - docker:27-dind
+  script:
+    - docker compose run --rm coverage
+  artifacts:
+    when: always
+    paths:
+      - reports/

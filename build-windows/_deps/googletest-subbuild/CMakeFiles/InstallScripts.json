@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/projets/docker-googletest-cpp-project/build-windows/_deps/googletest-subbuild/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

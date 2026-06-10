@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Rapport GoogleTest</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 24px; color: #202124; }
+    h1, h2 { color: #1a73e8; }
+    table { border-collapse: collapse; width: 100%; margin-bottom: 24px; }
+    th, td { border: 1px solid #dfe1e5; padding: 10px; text-align: left; vertical-align: top; }
+    th { background: #f1f3f4; }
+    tr.pass td { background: #ecf8ef; }
+    tr.failed td { background: #fbe9e7; }
+    tr.error td { background: #fff3cd; }
+    tr.skipped td { background: #f1f3f4; }
+    .status-pass { color: #188038; font-weight: 600; }
+    .status-failed { color: #b00020; font-weight: 600; }
+    .status-error { color: #b35c00; font-weight: 600; }
+    .status-skipped { color: #5f6368; font-weight: 600; }
+    .details { white-space: pre-wrap; font-family: Consolas, monospace; background: #f8f9fa; padding: 10px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <h1>Rapport GoogleTest</h1>
+  <p><strong>16</strong> tests, <strong>16</strong> passed, <strong>0</strong> failed, <strong>0</strong> errors, <strong>0</strong> skipped</p>
+  <h2>Suites</h2>
+  <table>
+    <thead>
+      <tr><th>Suite</th><th>Tests</th><th>Failures</th><th>Errors</th><th>Skipped</th><th>Durée</th><th>Statut</th></tr>
+    </thead>
+    <tbody>
+      <tr class="passed"><td>Linux-c++</td><td>16</td><td>0</td><td>0</td><td>0</td><td>0.000s</td><td class="status-passed">passed</td></tr>
+    </tbody>
+  </table>
+  <h2>Cas de test</h2>
+  <table>
+    <thead>
+      <tr><th>Suite</th><th>Classe</th><th>Test</th><th>Statut</th><th>Durée</th><th>Message</th><th>Détails</th></tr>
+    </thead>
+    <tbody>
+      <tr class="passed"><td>Linux-c++</td><td>CalculatorTest.AddsTwoPositiveNumbers</td><td>CalculatorTest.AddsTwoPositiveNumbers</td><td class="status-passed">passed</td><td>0.013s</td><td></td><td></td></tr>
+      <tr class="passed"><td>Linux-c++</td><td>CalculatorTest.SubtractsNumbers</td><td>CalculatorTest.SubtractsNumbers</td><td class="status-passed">passed</td><td>0.012s</td><td></td><td></td></tr>
+      <tr class="passed"><td>Linux-c++</td><td>CalculatorTest.MultipliesByZero</td><td>CalculatorTest.MultipliesByZero</td><td class="status-passed">passed</td><td>0.015s</td><td></td><td></td></tr>
+      <tr class="passed"><td>Linux-c++</td><td>CalculatorTest.DividesTwoNumbers</td><td>CalculatorTest.DividesTwoNumbers</td><td class="status-passed">passed</td><td>0.012s</td><td></td><td></td></tr>
+      <tr class="passed"><td>Linux-c++</td><td>CalculatorTest.ThrowsWhenDividingByZero</td><td>CalculatorTest.ThrowsWhenDividingByZero</td><td class="status-passed">passed</td><td>0.013s</td><td></td><td></td></tr>
+      <tr class="passed"><td>Linux-c++</td><td>ExpressionParserTest.EvaluatesAdditionExpression</td><td>ExpressionParserTest.EvaluatesAdditionExpression</td><td class="status-passed">passed</td><td>0.012s</td><td></td><td></td></tr>
+      <tr class="passed"><td>Linux-c++</td><td>ExpressionParserTest.IgnoresSpaces</td><td>ExpressionParserTest.IgnoresSpaces</td><td class="status-passed">passed</td><td>0.012s</td><td></td><td></td></tr>
+      <tr class="passed"><td>Linux-c++</td><td>ExpressionParserTest.HandlesNegativeLeftOperand</td><td>ExpressionParserTest.HandlesNegativeLeftOperand</td><td class="status-passed">passed</td><td>0.013s</td><td></td><td></td></tr>
+      <tr class="passed"><td>Linux-c++</td><td>ExpressionParserTest.RejectsUnknownExpression</td><td>ExpressionParserTest.RejectsUnknownExpression</td><td class="status-passed">passed</td><td>0.013s</td><td></td><td></td></tr>
+      <tr class="passed"><td>Linux-c++</td><td>CalculatorServiceMockTest.LogsSuccessWhenExpressionIsValid</td><td>CalculatorServiceMockTest.LogsSuccessWhenExpressionIsValid</td><td class="status-passed">passed</td><td>0.013s</td><td></td><td></td></tr>
+      <tr class="passed"><td>Linux-c++</td><td>CalculatorServiceMockTest.LogsFailureWhenExpressionIsInvalid</td><td>CalculatorServiceMockTest.LogsFailureWhenExpressionIsInvalid</td><td class="status-passed">passed</td><td>0.014s</td><td></td><td></td></tr>
+      <tr class="passed"><td>Linux-c++</td><td>NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_1_2  # GetParam() = 40-byte object &lt;90-6B 5D-C0 60-59 00-00 03-00 00-00 00-00 00-00 31-2B 32-00 00-00 00-00 00-00 00-00 00-00 00-00 03-00 00-00 00-00 00-00&gt;</td><td>NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_1_2  # GetParam() = 40-byte object &lt;90-6B 5D-C0 60-59 00-00 03-00 00-00 00-00 00-00 31-2B 32-00 00-00 00-00 00-00 00-00 00-00 00-00 03-00 00-00 00-00 00-00&gt;</td><td class="status-passed">passed</td><td>0.015s</td><td></td><td></td></tr>
+      <tr class="passed"><td>Linux-c++</td><td>NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_10_4  # GetParam() = 40-byte object &lt;90-6B 5D-C0 60-59 00-00 04-00 00-00 00-00 00-00 31-30 2D-34 00-00 00-00 00-00 00-00 00-00 00-00 06-00 00-00 00-00 00-00&gt;</td><td>NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_10_4  # GetParam() = 40-byte object &lt;90-6B 5D-C0 60-59 00-00 04-00 00-00 00-00 00-00 31-30 2D-34 00-00 00-00 00-00 00-00 00-00 00-00 06-00 00-00 00-00 00-00&gt;</td><td class="status-passed">passed</td><td>0.014s</td><td></td><td></td></tr>
+      <tr class="passed"><td>Linux-c++</td><td>NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_6_7  # GetParam() = 40-byte object &lt;90-6B 5D-C0 60-59 00-00 03-00 00-00 00-00 00-00 36-2A 37-00 00-00 00-00 00-00 00-00 00-00 00-00 2A-00 00-00 00-00 00-00&gt;</td><td>NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_6_7  # GetParam() = 40-byte object &lt;90-6B 5D-C0 60-59 00-00 03-00 00-00 00-00 00-00 36-2A 37-00 00-00 00-00 00-00 00-00 00-00 00-00 2A-00 00-00 00-00 00-00&gt;</td><td class="status-passed">passed</td><td>0.014s</td><td></td><td></td></tr>
+      <tr class="passed"><td>Linux-c++</td><td>NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_20_5  # GetParam() = 40-byte object &lt;90-6B 5D-C0 60-59 00-00 04-00 00-00 00-00 00-00 32-30 2F-35 00-00 00-00 00-00 00-00 00-00 00-00 04-00 00-00 00-00 00-00&gt;</td><td>NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_20_5  # GetParam() = 40-byte object &lt;90-6B 5D-C0 60-59 00-00 04-00 00-00 00-00 00-00 32-30 2F-35 00-00 00-00 00-00 00-00 00-00 00-00 04-00 00-00 00-00 00-00&gt;</td><td class="status-passed">passed</td><td>0.015s</td><td></td><td></td></tr>
+      <tr class="passed"><td>Linux-c++</td><td>NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr__8_2  # GetParam() = 40-byte object &lt;90-6B 5D-C0 60-59 00-00 04-00 00-00 00-00 00-00 2D-38 2F-32 00-00 00-00 00-00 00-00 00-00 00-00 FC-FF FF-FF 00-00 00-00&gt;</td><td>NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr__8_2  # GetParam() = 40-byte object &lt;90-6B 5D-C0 60-59 00-00 04-00 00-00 00-00 00-00 2D-38 2F-32 00-00 00-00 00-00 00-00 00-00 00-00 FC-FF FF-FF 00-00 00-00&gt;</td><td class="status-passed">passed</td><td>0.015s</td><td></td><td></td></tr>
+    </tbody>
+  </table>
+</body>
+</html>

@@ -1,0 +1,22 @@
+# ninja log v5
+4873	5932	1781092732771153700	lib/libgtest.a	e21429778cf18d0f
+84	3167	1781092730249529100	_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o	db5229d7031e93f6
+11555	13367	1781092739996515800	/workspace/build-coverage/calculator_tests[1]_tests.cmake	be86ee2ee3ca9416
+75	3798	1781092730833441000	CMakeFiles/calculator_tests.dir/tests/ExpressionParserTest.cpp.o	eeadd82c49d86915
+5934	6040	1781092732869185700	lib/libgtest_main.a	30ececf4ed42069a
+88	2842	1781092729505407200	_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o	a24f5154f0cf1834
+97	1883	1781092728633669300	_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o	7dcfca3cbc5f247d
+74	3939	1781092730961786200	CMakeFiles/calculator_tests.dir/tests/CalculatorTest.cpp.o	4465a0f2cdd03694
+79	11551	1781092738333371800	CMakeFiles/calculator_tests.dir/tests/CalculatorMockTest.cpp.o	617482548e43ffa8
+77	9643	1781092736600952500	CMakeFiles/calculator_tests.dir/tests/CalculatorParameterizedTest.cpp.o	e44506c653ff5d48
+68	1085	1781092727909756800	CMakeFiles/calculator_core.dir/src/ExpressionParser.cpp.o	307a4f3c346c2808
+11555	13367	1781092739996515800	calculator_tests[1]_tests.cmake	be86ee2ee3ca9416
+6399	6505	1781092733294617000	lib/libgmock_main.a	685aef476c43eaae
+72	853	1781092727698683100	CMakeFiles/calculator_cli.dir/src/main.cpp.o	3d65a78d88921f58
+93	4858	1781092731776293800	_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o	f091fa623df56e9c
+5933	6398	1781092733196014500	lib/libgmock.a	aed9b9110c6e7301
+11555	13367	1781092739996515800	calculator_tests	be86ee2ee3ca9416
+66	499	1781092727380905800	CMakeFiles/calculator_core.dir/src/Calculator.cpp.o	cb7bf4b85b049d9a
+70	733	1781092727592157900	CMakeFiles/calculator_core.dir/src/CalculatorService.cpp.o	ef00f31048f43930
+1323	1534	1781092728320594400	calculator_cli	5f72abb4fd456ea8
+1090	1322	1781092728125591700	libcalculator_core.a	2b84065053f64b29

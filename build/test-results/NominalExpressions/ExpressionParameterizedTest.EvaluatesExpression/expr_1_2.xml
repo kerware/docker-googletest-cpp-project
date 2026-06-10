@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" disabled="0" errors="0" time="0." timestamp="2026-06-10T13:00:26.834" name="AllTests">
+  <testsuite name="NominalExpressions/ExpressionParameterizedTest" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0." timestamp="2026-06-10T13:00:26.834">
+    <testcase name="EvaluatesExpression/expr_1_2" value_param="40-byte object &lt;90-71 94-9D 82-5E 00-00 03-00 00-00 00-00 00-00 31-2B 32-00 00-00 00-00 00-00 00-00 00-00 00-00 03-00 00-00 00-00 00-00&gt;" file="/workspace/tests/CalculatorParameterizedTest.cpp" line="14" status="run" result="completed" time="0." timestamp="2026-06-10T13:00:26.834" classname="NominalExpressions/ExpressionParameterizedTest" />
+  </testsuite>
+</testsuites>

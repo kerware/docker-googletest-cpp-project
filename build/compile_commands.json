@@ -1,0 +1,74 @@
+[
+{
+  "directory": "/workspace/build",
+  "command": "/usr/bin/c++ -I/workspace/include -g -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/calculator_core.dir/src/Calculator.cpp.o -c /workspace/src/Calculator.cpp",
+  "file": "/workspace/src/Calculator.cpp",
+  "output": "CMakeFiles/calculator_core.dir/src/Calculator.cpp.o"
+},
+{
+  "directory": "/workspace/build",
+  "command": "/usr/bin/c++ -I/workspace/include -g -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/calculator_core.dir/src/ExpressionParser.cpp.o -c /workspace/src/ExpressionParser.cpp",
+  "file": "/workspace/src/ExpressionParser.cpp",
+  "output": "CMakeFiles/calculator_core.dir/src/ExpressionParser.cpp.o"
+},
+{
+  "directory": "/workspace/build",
+  "command": "/usr/bin/c++ -I/workspace/include -g -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/calculator_core.dir/src/CalculatorService.cpp.o -c /workspace/src/CalculatorService.cpp",
+  "file": "/workspace/src/CalculatorService.cpp",
+  "output": "CMakeFiles/calculator_core.dir/src/CalculatorService.cpp.o"
+},
+{
+  "directory": "/workspace/build",
+  "command": "/usr/bin/c++ -I/workspace/include -g -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/calculator_cli.dir/src/main.cpp.o -c /workspace/src/main.cpp",
+  "file": "/workspace/src/main.cpp",
+  "output": "CMakeFiles/calculator_cli.dir/src/main.cpp.o"
+},
+{
+  "directory": "/workspace/build",
+  "command": "/usr/bin/c++ -I/workspace/include -isystem /workspace/build/_deps/googletest-src/googletest/include -isystem /workspace/build/_deps/googletest-src/googletest -isystem /workspace/build/_deps/googletest-src/googlemock/include -isystem /workspace/build/_deps/googletest-src/googlemock -g -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/calculator_tests.dir/tests/CalculatorTest.cpp.o -c /workspace/tests/CalculatorTest.cpp",
+  "file": "/workspace/tests/CalculatorTest.cpp",
+  "output": "CMakeFiles/calculator_tests.dir/tests/CalculatorTest.cpp.o"
+},
+{
+  "directory": "/workspace/build",
+  "command": "/usr/bin/c++ -I/workspace/include -isystem /workspace/build/_deps/googletest-src/googletest/include -isystem /workspace/build/_deps/googletest-src/googletest -isystem /workspace/build/_deps/googletest-src/googlemock/include -isystem /workspace/build/_deps/googletest-src/googlemock -g -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/calculator_tests.dir/tests/ExpressionParserTest.cpp.o -c /workspace/tests/ExpressionParserTest.cpp",
+  "file": "/workspace/tests/ExpressionParserTest.cpp",
+  "output": "CMakeFiles/calculator_tests.dir/tests/ExpressionParserTest.cpp.o"
+},
+{
+  "directory": "/workspace/build",
+  "command": "/usr/bin/c++ -I/workspace/include -isystem /workspace/build/_deps/googletest-src/googletest/include -isystem /workspace/build/_deps/googletest-src/googletest -isystem /workspace/build/_deps/googletest-src/googlemock/include -isystem /workspace/build/_deps/googletest-src/googlemock -g -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/calculator_tests.dir/tests/CalculatorParameterizedTest.cpp.o -c /workspace/tests/CalculatorParameterizedTest.cpp",
+  "file": "/workspace/tests/CalculatorParameterizedTest.cpp",
+  "output": "CMakeFiles/calculator_tests.dir/tests/CalculatorParameterizedTest.cpp.o"
+},
+{
+  "directory": "/workspace/build",
+  "command": "/usr/bin/c++ -I/workspace/include -isystem /workspace/build/_deps/googletest-src/googletest/include -isystem /workspace/build/_deps/googletest-src/googletest -isystem /workspace/build/_deps/googletest-src/googlemock/include -isystem /workspace/build/_deps/googletest-src/googlemock -g -std=c++17 -Wall -Wextra -Wpedantic -o CMakeFiles/calculator_tests.dir/tests/CalculatorMockTest.cpp.o -c /workspace/tests/CalculatorMockTest.cpp",
+  "file": "/workspace/tests/CalculatorMockTest.cpp",
+  "output": "CMakeFiles/calculator_tests.dir/tests/CalculatorMockTest.cpp.o"
+},
+{
+  "directory": "/workspace/build",
+  "command": "/usr/bin/c++ -I/workspace/build/_deps/googletest-src/googlemock/include -I/workspace/build/_deps/googletest-src/googlemock -isystem /workspace/build/_deps/googletest-src/googletest/include -isystem /workspace/build/_deps/googletest-src/googletest -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /workspace/build/_deps/googletest-src/googlemock/src/gmock-all.cc",
+  "file": "/workspace/build/_deps/googletest-src/googlemock/src/gmock-all.cc",
+  "output": "_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o"
+},
+{
+  "directory": "/workspace/build",
+  "command": "/usr/bin/c++ -isystem /workspace/build/_deps/googletest-src/googlemock/include -isystem /workspace/build/_deps/googletest-src/googlemock -isystem /workspace/build/_deps/googletest-src/googletest/include -isystem /workspace/build/_deps/googletest-src/googletest -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /workspace/build/_deps/googletest-src/googlemock/src/gmock_main.cc",
+  "file": "/workspace/build/_deps/googletest-src/googlemock/src/gmock_main.cc",
+  "output": "_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o"
+},
+{
+  "directory": "/workspace/build",
+  "command": "/usr/bin/c++ -I/workspace/build/_deps/googletest-src/googletest/include -I/workspace/build/_deps/googletest-src/googletest -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /workspace/build/_deps/googletest-src/googletest/src/gtest-all.cc",
+  "file": "/workspace/build/_deps/googletest-src/googletest/src/gtest-all.cc",
+  "output": "_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o"
+},
+{
+  "directory": "/workspace/build",
+  "command": "/usr/bin/c++ -isystem /workspace/build/_deps/googletest-src/googletest/include -isystem /workspace/build/_deps/googletest-src/googletest -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /workspace/build/_deps/googletest-src/googletest/src/gtest_main.cc",
+  "file": "/workspace/build/_deps/googletest-src/googletest/src/gtest_main.cc",
+  "output": "_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o"
+}
+]

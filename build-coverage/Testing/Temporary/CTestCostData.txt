@@ -1,0 +1,27 @@
+CalculatorTest.AddsTwoPositiveNumbers 3 0.014828
+CalculatorTest.SubtractsNumbers 3 0.0146986
+CalculatorTest.MultipliesByZero 3 0.0147209
+CalculatorTest.DividesTwoNumbers 3 0.0147386
+CalculatorTest.ThrowsWhenDividingByZero 3 0.0145414
+ExpressionParserTest.EvaluatesAdditionExpression 3 0.0144981
+ExpressionParserTest.IgnoresSpaces 3 0.0142759
+ExpressionParserTest.HandlesNegativeLeftOperand 3 0.0138342
+ExpressionParserTest.RejectsUnknownExpression 3 0.0142001
+CalculatorServiceMockTest.LogsSuccessWhenExpressionIsValid 3 0.0139798
+CalculatorServiceMockTest.LogsFailureWhenExpressionIsInvalid 3 0.0141197
+NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_1_2 0 0
+NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_10_4 0 0
+NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_6_7 0 0
+NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_20_5 0 0
+NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr__8_2 0 0
+NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_1_2 0 0
+NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_10_4 0 0
+NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_6_7 0 0
+NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_20_5 0 0
+NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr__8_2 0 0
+NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_1_2  # GetParam() = 40-byte object <50-5B D9-9A ED-5E 00-00 03-00 00-00 00-00 00-00 31-2B 32-00 00-00 00-00 00-00 00-00 00-00 00-00 03-00 00-00 00-00 00-00> 1 0.0442597
+NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_10_4  # GetParam() = 40-byte object <50-5B D9-9A ED-5E 00-00 04-00 00-00 00-00 00-00 31-30 2D-34 00-00 00-00 00-00 00-00 00-00 00-00 06-00 00-00 00-00 00-00> 1 0.0458701
+NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_6_7  # GetParam() = 40-byte object <50-5B D9-9A ED-5E 00-00 03-00 00-00 00-00 00-00 36-2A 37-00 00-00 00-00 00-00 00-00 00-00 00-00 2A-00 00-00 00-00 00-00> 1 0.0449122
+NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_20_5  # GetParam() = 40-byte object <50-5B D9-9A ED-5E 00-00 04-00 00-00 00-00 00-00 32-30 2F-35 00-00 00-00 00-00 00-00 00-00 00-00 04-00 00-00 00-00 00-00> 1 0.0443703
+NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr__8_2  # GetParam() = 40-byte object <50-5B D9-9A ED-5E 00-00 04-00 00-00 00-00 00-00 2D-38 2F-32 00-00 00-00 00-00 00-00 00-00 00-00 FC-FF FF-FF 00-00 00-00> 1 0.0439256
+---

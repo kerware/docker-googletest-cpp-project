@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Linux-c++"
+	tests="16"
+	failures="0"
+	disabled="0"
+	skipped="0"
+	hostname="b4fce6f54012"
+	time="0"
+	timestamp="2026-06-10T12:57:31"
+	>
+	<testcase name="CalculatorTest.AddsTwoPositiveNumbers" classname="CalculatorTest.AddsTwoPositiveNumbers" time="0.013414" status="run">
+		<properties/>
+		<system-out>Running main() from /workspace/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = CalculatorTest.AddsTwoPositiveNumbers
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from CalculatorTest
+[ RUN      ] CalculatorTest.AddsTwoPositiveNumbers
+[       OK ] CalculatorTest.AddsTwoPositiveNumbers (0 ms)
+[----------] 1 test from CalculatorTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+</system-out>
+	</testcase>
+	<testcase name="CalculatorTest.SubtractsNumbers" classname="CalculatorTest.SubtractsNumbers" time="0.0128313" status="run">
+		<properties/>
+		<system-out>Running main() from /workspace/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = CalculatorTest.SubtractsNumbers
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from CalculatorTest
+[ RUN      ] CalculatorTest.SubtractsNumbers
+[       OK ] CalculatorTest.SubtractsNumbers (0 ms)
+[----------] 1 test from CalculatorTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+</system-out>
+	</testcase>
+	<testcase name="CalculatorTest.MultipliesByZero" classname="CalculatorTest.MultipliesByZero" time="0.0144312" status="run">
+		<properties/>
+		<system-out>Running main() from /workspace/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = CalculatorTest.MultipliesByZero
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from CalculatorTest
+[ RUN      ] CalculatorTest.MultipliesByZero
+[       OK ] CalculatorTest.MultipliesByZero (0 ms)
+[----------] 1 test from CalculatorTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+</system-out>
+	</testcase>
+	<testcase name="CalculatorTest.DividesTwoNumbers" classname="CalculatorTest.DividesTwoNumbers" time="0.0134157" status="run">
+		<properties/>
+		<system-out>Running main() from /workspace/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = CalculatorTest.DividesTwoNumbers
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from CalculatorTest
+[ RUN      ] CalculatorTest.DividesTwoNumbers
+[       OK ] CalculatorTest.DividesTwoNumbers (0 ms)
+[----------] 1 test from CalculatorTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+</system-out>
+	</testcase>
+	<testcase name="CalculatorTest.ThrowsWhenDividingByZero" classname="CalculatorTest.ThrowsWhenDividingByZero" time="0.0192547" status="run">
+		<properties/>
+		<system-out>Running main() from /workspace/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = CalculatorTest.ThrowsWhenDividingByZero
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from CalculatorTest
+[ RUN      ] CalculatorTest.ThrowsWhenDividingByZero
+[       OK ] CalculatorTest.ThrowsWhenDividingByZero (5 ms)
+[----------] 1 test from CalculatorTest (5 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (6 ms total)
+[  PASSED  ] 1 test.
+</system-out>
+	</testcase>
+	<testcase name="ExpressionParserTest.EvaluatesAdditionExpression" classname="ExpressionParserTest.EvaluatesAdditionExpression" time="0.0130951" status="run">
+		<properties/>
+		<system-out>Running main() from /workspace/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ExpressionParserTest.EvaluatesAdditionExpression
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ExpressionParserTest
+[ RUN      ] ExpressionParserTest.EvaluatesAdditionExpression
+[       OK ] ExpressionParserTest.EvaluatesAdditionExpression (0 ms)
+[----------] 1 test from ExpressionParserTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+</system-out>
+	</testcase>
+	<testcase name="ExpressionParserTest.IgnoresSpaces" classname="ExpressionParserTest.IgnoresSpaces" time="0.0135631" status="run">
+		<properties/>
+		<system-out>Running main() from /workspace/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ExpressionParserTest.IgnoresSpaces
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ExpressionParserTest
+[ RUN      ] ExpressionParserTest.IgnoresSpaces
+[       OK ] ExpressionParserTest.IgnoresSpaces (0 ms)
+[----------] 1 test from ExpressionParserTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+</system-out>
+	</testcase>
+	<testcase name="ExpressionParserTest.HandlesNegativeLeftOperand" classname="ExpressionParserTest.HandlesNegativeLeftOperand" time="0.0135157" status="run">
+		<properties/>
+		<system-out>Running main() from /workspace/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ExpressionParserTest.HandlesNegativeLeftOperand
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ExpressionParserTest
+[ RUN      ] ExpressionParserTest.HandlesNegativeLeftOperand
+[       OK ] ExpressionParserTest.HandlesNegativeLeftOperand (0 ms)
+[----------] 1 test from ExpressionParserTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+</system-out>
+	</testcase>
+	<testcase name="ExpressionParserTest.RejectsUnknownExpression" classname="ExpressionParserTest.RejectsUnknownExpression" time="0.0148642" status="run">
+		<properties/>
+		<system-out>Running main() from /workspace/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ExpressionParserTest.RejectsUnknownExpression
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ExpressionParserTest
+[ RUN      ] ExpressionParserTest.RejectsUnknownExpression
+[       OK ] ExpressionParserTest.RejectsUnknownExpression (0 ms)
+[----------] 1 test from ExpressionParserTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+</system-out>
+	</testcase>
+	<testcase name="CalculatorServiceMockTest.LogsSuccessWhenExpressionIsValid" classname="CalculatorServiceMockTest.LogsSuccessWhenExpressionIsValid" time="0.0166698" status="run">
+		<properties/>
+		<system-out>Running main() from /workspace/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = CalculatorServiceMockTest.LogsSuccessWhenExpressionIsValid
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from CalculatorServiceMockTest
+[ RUN      ] CalculatorServiceMockTest.LogsSuccessWhenExpressionIsValid
+[       OK ] CalculatorServiceMockTest.LogsSuccessWhenExpressionIsValid (0 ms)
+[----------] 1 test from CalculatorServiceMockTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+</system-out>
+	</testcase>
+	<testcase name="CalculatorServiceMockTest.LogsFailureWhenExpressionIsInvalid" classname="CalculatorServiceMockTest.LogsFailureWhenExpressionIsInvalid" time="0.0153019" status="run">
+		<properties/>
+		<system-out>Running main() from /workspace/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = CalculatorServiceMockTest.LogsFailureWhenExpressionIsInvalid
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from CalculatorServiceMockTest
+[ RUN      ] CalculatorServiceMockTest.LogsFailureWhenExpressionIsInvalid
+[       OK ] CalculatorServiceMockTest.LogsFailureWhenExpressionIsInvalid (0 ms)
+[----------] 1 test from CalculatorServiceMockTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+</system-out>
+	</testcase>
+	<testcase name="NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_1_2  # GetParam() = 40-byte object &lt;90-6B 5D-C0 60-59 00-00 03-00 00-00 00-00 00-00 31-2B 32-00 00-00 00-00 00-00 00-00 00-00 00-00 03-00 00-00 00-00 00-00&gt;" classname="NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_1_2  # GetParam() = 40-byte object &lt;90-6B 5D-C0 60-59 00-00 03-00 00-00 00-00 00-00 31-2B 32-00 00-00 00-00 00-00 00-00 00-00 00-00 03-00 00-00 00-00 00-00&gt;" time="0.0203104" status="run">
+		<properties/>
+		<system-out>Running main() from /workspace/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_1_2
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NominalExpressions/ExpressionParameterizedTest
+[ RUN      ] NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_1_2
+[       OK ] NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_1_2 (0 ms)
+[----------] 1 test from NominalExpressions/ExpressionParameterizedTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+</system-out>
+	</testcase>
+	<testcase name="NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_10_4  # GetParam() = 40-byte object &lt;90-6B 5D-C0 60-59 00-00 04-00 00-00 00-00 00-00 31-30 2D-34 00-00 00-00 00-00 00-00 00-00 00-00 06-00 00-00 00-00 00-00&gt;" classname="NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_10_4  # GetParam() = 40-byte object &lt;90-6B 5D-C0 60-59 00-00 04-00 00-00 00-00 00-00 31-30 2D-34 00-00 00-00 00-00 00-00 00-00 00-00 06-00 00-00 00-00 00-00&gt;" time="0.0202072" status="run">
+		<properties/>
+		<system-out>Running main() from /workspace/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_10_4
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NominalExpressions/ExpressionParameterizedTest
+[ RUN      ] NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_10_4
+[       OK ] NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_10_4 (0 ms)
+[----------] 1 test from NominalExpressions/ExpressionParameterizedTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+</system-out>
+	</testcase>
+	<testcase name="NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_6_7  # GetParam() = 40-byte object &lt;90-6B 5D-C0 60-59 00-00 03-00 00-00 00-00 00-00 36-2A 37-00 00-00 00-00 00-00 00-00 00-00 00-00 2A-00 00-00 00-00 00-00&gt;" classname="NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_6_7  # GetParam() = 40-byte object &lt;90-6B 5D-C0 60-59 00-00 03-00 00-00 00-00 00-00 36-2A 37-00 00-00 00-00 00-00 00-00 00-00 00-00 2A-00 00-00 00-00 00-00&gt;" time="0.0172643" status="run">
+		<properties/>
+		<system-out>Running main() from /workspace/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_6_7
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NominalExpressions/ExpressionParameterizedTest
+[ RUN      ] NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_6_7
+[       OK ] NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_6_7 (0 ms)
+[----------] 1 test from NominalExpressions/ExpressionParameterizedTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+</system-out>
+	</testcase>
+	<testcase name="NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_20_5  # GetParam() = 40-byte object &lt;90-6B 5D-C0 60-59 00-00 04-00 00-00 00-00 00-00 32-30 2F-35 00-00 00-00 00-00 00-00 00-00 00-00 04-00 00-00 00-00 00-00&gt;" classname="NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_20_5  # GetParam() = 40-byte object &lt;90-6B 5D-C0 60-59 00-00 04-00 00-00 00-00 00-00 32-30 2F-35 00-00 00-00 00-00 00-00 00-00 00-00 04-00 00-00 00-00 00-00&gt;" time="0.0161932" status="run">
+		<properties/>
+		<system-out>Running main() from /workspace/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_20_5
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NominalExpressions/ExpressionParameterizedTest
+[ RUN      ] NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_20_5
+[       OK ] NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_20_5 (0 ms)
+[----------] 1 test from NominalExpressions/ExpressionParameterizedTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+</system-out>
+	</testcase>
+	<testcase name="NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr__8_2  # GetParam() = 40-byte object &lt;90-6B 5D-C0 60-59 00-00 04-00 00-00 00-00 00-00 2D-38 2F-32 00-00 00-00 00-00 00-00 00-00 00-00 FC-FF FF-FF 00-00 00-00&gt;" classname="NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr__8_2  # GetParam() = 40-byte object &lt;90-6B 5D-C0 60-59 00-00 04-00 00-00 00-00 00-00 2D-38 2F-32 00-00 00-00 00-00 00-00 00-00 00-00 FC-FF FF-FF 00-00 00-00&gt;" time="0.0184459" status="run">
+		<properties/>
+		<system-out>Running main() from /workspace/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr__8_2
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NominalExpressions/ExpressionParameterizedTest
+[ RUN      ] NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr__8_2
+[       OK ] NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr__8_2 (0 ms)
+[----------] 1 test from NominalExpressions/ExpressionParameterizedTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+</system-out>
+	</testcase>
+</testsuite>

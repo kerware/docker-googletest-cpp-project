@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <title>Clang-Tidy Report</title>
+  <style>body{font-family:Arial,Helvetica,sans-serif;margin:20px}pre{background:#f8f9fa;border:1px solid #ddd;padding:12px;white-space:pre-wrap;word-break:break-word}</style>
+</head>
+<body>
+  <h1>Clang-Tidy Report</h1>
+  <h2>Raw output</h2>
+  <pre>[1/11] Processing file /workspace/src/Calculator.cpp.
+13409 warnings generated.
+[2/11] Processing file /workspace/src/CalculatorService.cpp.
+26755 warnings generated.
+[3/11] Processing file /workspace/src/ExpressionParser.cpp.
+40173 warnings generated.
+[4/11] Processing file /workspace/src/main.cpp.
+58365 warnings generated.
+[5/11] Processing file /workspace/include/Calculator.hpp.
+71766 warnings generated.
+[6/11] Processing file /workspace/include/ExpressionParser.hpp.
+84938 warnings generated.
+[7/11] Processing file /workspace/include/OperationLogger.hpp.
+98110 warnings generated.
+[8/11] Processing file /workspace/tests/CalculatorMockTest.cpp.
+154689 warnings generated.
+[9/11] Processing file /workspace/tests/CalculatorParameterizedTest.cpp.
+202962 warnings generated.
+[10/11] Processing file /workspace/tests/CalculatorTest.cpp.
+249965 warnings generated.
+[11/11] Processing file /workspace/tests/ExpressionParserTest.cpp.
+296959 warnings generated.
+/workspace/include/Calculator.hpp:7:5: warning: function &#x27;add&#x27; should be marked [[nodiscard]] [modernize-use-nodiscard]
+    7 |     int add(int left, int right) const;
+      |     ^
+      |     [[nodiscard]] 
+/workspace/include/Calculator.hpp:7:9: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+    7 |     int add(int left, int right) const;
+      |     ~~~ ^                             
+      |     auto                               -&gt; int
+/workspace/include/Calculator.hpp:8:5: warning: function &#x27;subtract&#x27; should be marked [[nodiscard]] [modernize-use-nodiscard]
+    8 |     int subtract(int left, int right) const;
+      |     ^
+      |     [[nodiscard]] 
+/workspace/include/Calculator.hpp:8:9: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+    8 |     int subtract(int left, int right) const;
+      |     ~~~ ^                                  
+      |     auto                                    -&gt; int
+/workspace/include/Calculator.hpp:9:5: warning: function &#x27;multiply&#x27; should be marked [[nodiscard]] [modernize-use-nodiscard]
+    9 |     int multiply(int left, int right) const;
+      |     ^
+      |     [[nodiscard]] 
+/workspace/include/Calculator.hpp:9:9: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+    9 |     int multiply(int left, int right) const;
+      |     ~~~ ^                                  
+      |     auto                                    -&gt; int
+/workspace/include/Calculator.hpp:10:5: warning: function &#x27;divide&#x27; should be marked [[nodiscard]] [modernize-use-nodiscard]
+   10 |     int divide(int left, int right) const;
+      |     ^
+      |     [[nodiscard]] 
+/workspace/include/Calculator.hpp:10:9: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+   10 |     int divide(int left, int right) const;
+      |     ~~~ ^                                
+      |     auto                                  -&gt; int
+/workspace/include/ExpressionParser.hpp:7:5: warning: function &#x27;evaluate&#x27; should be marked [[nodiscard]] [modernize-use-nodiscard]
+    7 |     int evaluate(const std::string&amp; expression) const;
+      |     ^
+      |     [[nodiscard]] 
+/workspace/include/ExpressionParser.hpp:7:9: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+    7 |     int evaluate(const std::string&amp; expression) const;
+      |     ~~~ ^                                            
+      |     auto                                              -&gt; int
+/workspace/include/OperationLogger.hpp:16:5: warning: function &#x27;evaluate&#x27; should be marked [[nodiscard]] [modernize-use-nodiscard]
+   16 |     int evaluate(const std::string&amp; expression) const;
+      |     ^
+      |     [[nodiscard]] 
+/workspace/include/OperationLogger.hpp:16:9: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+   16 |     int evaluate(const std::string&amp; expression) const;
+      |     ~~~ ^                                            
+      |     auto                                              -&gt; int
+/workspace/src/Calculator.cpp:3:17: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+    3 | int Calculator::add(int left, int right) const {
+      |                 ^
+note: this fix will not be applied because it overlaps with another fix
+/workspace/src/Calculator.cpp:3:17: warning: method &#x27;add&#x27; can be made static [readability-convert-member-functions-to-static]
+    3 | int Calculator::add(int left, int right) const {
+      |                 ^                        ~~~~~
+/workspace/src/Calculator.cpp:7:17: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+    7 | int Calculator::subtract(int left, int right) const {
+      |                 ^
+note: this fix will not be applied because it overlaps with another fix
+/workspace/src/Calculator.cpp:7:17: warning: method &#x27;subtract&#x27; can be made static [readability-convert-member-functions-to-static]
+    7 | int Calculator::subtract(int left, int right) const {
+      |                 ^                             ~~~~~
+/workspace/src/Calculator.cpp:11:17: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+   11 | int Calculator::multiply(int left, int right) const {
+      |                 ^
+note: this fix will not be applied because it overlaps with another fix
+/workspace/src/Calculator.cpp:11:17: warning: method &#x27;multiply&#x27; can be made static [readability-convert-member-functions-to-static]
+   11 | int Calculator::multiply(int left, int right) const {
+      |                 ^                             ~~~~~
+/workspace/src/Calculator.cpp:15:17: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+   15 | int Calculator::divide(int left, int right) const {
+      |                 ^
+note: this fix will not be applied because it overlaps with another fix
+/workspace/src/Calculator.cpp:15:17: warning: method &#x27;divide&#x27; can be made static [readability-convert-member-functions-to-static]
+   15 | int Calculator::divide(int left, int right) const {
+      |                 ^                           ~~~~~
+/workspace/src/CalculatorService.cpp:7:24: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+    7 | int CalculatorService::evaluate(const std::string&amp; expression) const {
+      | ~~~                    ^
+      | auto                                                                 -&gt; int
+/workspace/src/ExpressionParser.cpp:10:13: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+   10 | std::string removeSpaces(const std::string&amp; input) {
+      | ~~~~~~~~~~~ ^
+      | auto                                               -&gt; std::string
+/workspace/src/ExpressionParser.cpp:13:14: warning: implicit conversion &#x27;int&#x27; -&gt; &#x27;bool&#x27; [readability-implicit-bool-conversion]
+   13 |         if (!std::isspace(static_cast&lt;unsigned char&gt;(character))) {
+      |             ~^                                                  
+      |                                                                  == 0
+/workspace/src/ExpressionParser.cpp:20:5: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+   20 | int parseInteger(const std::string&amp; value) {
+      | ~~~ ^
+      | auto                                       -&gt; int
+/workspace/src/ExpressionParser.cpp:40:23: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+   40 | int ExpressionParser::evaluate(const std::string&amp; expression) const {
+      |                       ^
+note: this fix will not be applied because it overlaps with another fix
+/workspace/src/ExpressionParser.cpp:40:23: warning: method &#x27;evaluate&#x27; can be made static [readability-convert-member-functions-to-static]
+   40 | int ExpressionParser::evaluate(const std::string&amp; expression) const {
+      |                       ^                                       ~~~~~
+/workspace/src/ExpressionParser.cpp:47:10: warning: variable name &#x27;op&#x27; is too short, expected at least 3 characters [readability-identifier-length]
+   47 |     char op = &#x27;\0&#x27;;
+      |          ^
+/workspace/src/main.cpp:7:5: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+    7 | int main(int argc, char** argv) {
+      | ~~~ ^
+      | auto                            -&gt; int
+/workspace/tests/CalculatorParameterizedTest.cpp:21:13: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+   21 | std::string PrintExpressionCase(const ::testing::TestParamInfo&lt;ExpressionCase&gt;&amp; info) {
+      | ~~~~~~~~~~~ ^
+      | auto                                                                                  -&gt; std::string
+/workspace/tests/CalculatorParameterizedTest.cpp:24:14: warning: implicit conversion &#x27;int&#x27; -&gt; &#x27;bool&#x27; [readability-implicit-bool-conversion]
+   24 |         if (!std::isalnum(static_cast&lt;unsigned char&gt;(character))) {
+      |             ~^                                                  
+      |                                                                  == 0
+Suppressed 297125 warnings (296891 in non-user code, 234 NOLINT).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+</pre>
+  <h2>Exported fixes (YAML)</h2><pre>---
+MainSourceFile:  &#x27;/workspace/src/Calculator.cpp&#x27;
+Diagnostics:
+  - DiagnosticName:  modernize-use-nodiscard
+    DiagnosticMessage:
+      Message:         &#x27;function &#x27;&#x27;add&#x27;&#x27; should be marked [[nodiscard]]&#x27;
+      FilePath:        &#x27;/workspace/include/Calculator.hpp&#x27;
+      FileOffset:      67
+      Replacements:
+        - FilePath:        &#x27;/workspace/include/Calculator.hpp&#x27;
+          Offset:          67
+          Length:          0
+          ReplacementText: &#x27;[[nodiscard]] &#x27;
+    Level:           Warning
+    BuildDirectory:  &#x27;/workspace/build&#x27;
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        &#x27;/workspace/include/Calculator.hpp&#x27;
+      FileOffset:      71
+      Replacements:
+        - FilePath:        &#x27;/workspace/include/Calculator.hpp&#x27;
+          Offset:          67
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        &#x27;/workspace/include/Calculator.hpp&#x27;
+          Offset:          101
+          Length:          0
+          ReplacementText: &#x27; -&gt; int&#x27;
+    Level:           Warning
+    BuildDirectory:  &#x27;/workspace/build&#x27;
+  - DiagnosticName:  modernize-use-nodiscard
+    DiagnosticMessage:
+      Message:         &#x27;function &#x27;&#x27;subtract&#x27;&#x27; should be marked [[nodiscard]]&#x27;
+      FilePath:        &#x27;/workspace/include/Calculator.hpp&#x27;
+      FileOffset:      107
+      Replacements:
+        - FilePath:        &#x27;/workspace/include/Calculator.hpp&#x27;
+          Offset:          107
+          Length:          0
+          ReplacementText: &#x27;[[nodiscard]] &#x27;
+    Level:           Warning
+    BuildDirectory:  &#x27;/workspace/build&#x27;
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        &#x27;/workspace/include/Calculator.hpp&#x27;
+      FileOffset:      111
+      Replacements:
+        - FilePath:        &#x27;/workspace/include/Calculator.hpp&#x27;
+          Offset:          107
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        &#x27;/workspace/include/Calculator.hpp&#x27;
+          Offset:          146
+          Length:          0
+          ReplacementText: &#x27; -&gt; int&#x27;
+    Level:           Warning
+    BuildDirectory:  &#x27;/workspace/build&#x27;
+  - DiagnosticName:  modernize-use-nodiscard
+    DiagnosticMessage:
+      Message:         &#x27;function &#x27;&#x27;multiply&#x27;&#x27; should be marked [[nodiscard]]&#x27;
+      FilePath:        &#x27;/workspace/include/Calculator.hpp&#x27;
+      FileOffset:      152
+      Replacements:
+        - FilePath:        &#x27;/workspace/include/Calculator.hpp&#x27;
+          Offset:          152
+          Length:          0
+          ReplacementText: &#x27;[[nodiscard]] &#x27;
+    Level:           Warning
+    BuildDirectory:  &#x27;/workspace/build&#x27;
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        &#x27;/workspace/include/Calculator.hpp&#x27;
+      FileOffset:      156
+      Replacements:
+        - FilePath:        &#x27;/workspace/include/Calculator.hpp&#x27;
+          Offset:          152
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        &#x27;/workspace/include/Calculator.hpp&#x27;
+          Offset:          191
+          Length:          0
+          ReplacementText: &#x27; -&gt; int&#x27;
+    Level:           Warning
+    BuildDirectory:  &#x27;/workspace/build&#x27;
+  - DiagnosticName:  modernize-use-nodiscard
+    DiagnosticMessage:
+      Message:         &#x27;function &#x27;&#x27;divide&#x27;&#x27; should be marked [[nodiscard]]&#x27;
+      FilePath:        &#x27;/workspace/include/Calculator.hpp&#x27;
+      FileOffset:      197
+      Replacements:
+        - FilePath:        &#x27;/workspace/include/Calculator.hpp&#x27;
+          Offset:          197
+          Length:          0
+          ReplacementText: &#x27;[[nodiscard]] &#x27;
+    Level:           Warning
+    BuildDirectory:  &#x27;/workspace/build&#x27;
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        &#x27;/workspace/include/Calculator.hpp&#x27;
+      FileOffset:      201
+      Replacements:
+        - FilePath:        &#x27;/workspace/include/Calculator.hpp&#x27;
+          Offset:          197
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        &#x27;/workspace/include/Calculator.hpp&#x27;
+          Offset:          234
+          Length:          0
+          ReplacementText: &#x27; -&gt; int&#x27;
+    Level:           Warning
+    BuildDirectory:  &#x27;/workspace/build&#x27;
+  - DiagnosticName:  modernize-use-nodiscard
+    DiagnosticMessage:
+      Message:         &#x27;function &#x27;&#x27;evaluate&#x27;&#x27; should be marked [[nodiscard]]&#x27;
+      FilePath:        &#x27;/workspace/include/ExpressionParser.hpp&#x27;
+      FileOffset:      70
+      Replacements:
+        - FilePath:        &#x27;/workspace/include/ExpressionParser.hpp&#x27;
+          Offset:          70
+          Length:          0
+          ReplacementText: &#x27;[[nodiscard]] &#x27;
+    Level:           Warning
+    BuildDirectory:  &#x27;/workspace/build&#x27;
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        &#x27;/workspace/include/ExpressionParser.hpp&#x27;
+      FileOffset:      74
+      Replacements:
+        - FilePath:        &#x27;/workspace/include/ExpressionParser.hpp&#x27;
+          Offset:          70
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        &#x27;/workspace/include/ExpressionParser.hpp&#x27;
+          Offset:          119
+          Length:          0
+          ReplacementText: &#x27; -&gt; int&#x27;
+    Level:           Warning
+    BuildDirectory:  &#x27;/workspace/build&#x27;
+  - DiagnosticName:  modernize-use-nodiscard
+    DiagnosticMessage:
+      Message:         &#x27;function &#x27;&#x27;evaluate&#x27;&#x27; should be marked [[nodiscard]]&#x27;
+      FilePath:        &#x27;/workspace/include/OperationLogger.hpp&#x27;
+      FileOffset:      394
+      Replacements:
+        - FilePath:        &#x27;/workspace/include/OperationLogger.hpp&#x27;
+          Offset:          394
+          Length:          0
+          ReplacementText: &#x27;[[nodiscard]] &#x27;
+    Level:           Warning
+    BuildDirectory:  &#x27;/workspace/build&#x27;
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        &#x27;/workspace/include/OperationLogger.hpp&#x27;
+      FileOffset:      398
+      Replacements:
+        - FilePath:        &#x27;/workspace/include/OperationLogger.hpp&#x27;
+          Offset:          394
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        &#x27;/workspace/include/OperationLogger.hpp&#x27;
+          Offset:          443
+          Length:          0
+          ReplacementText: &#x27; -&gt; int&#x27;
+    Level:           Warning
+    BuildDirectory:  &#x27;/workspace/build&#x27;
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        &#x27;/workspace/src/Calculator.cpp&#x27;
+      FileOffset:      43
+      Replacements:    []
+    Notes:
+      - Message:         this fix will not be applied because it overlaps with another fix
+        FilePath:        &#x27;&#x27;
+        FileOffset:      0
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  &#x27;/workspace/build&#x27;
+  - DiagnosticName:  readability-convert-member-functions-to-static
+    DiagnosticMessage:
+      Message:         &#x27;method &#x27;&#x27;add&#x27;&#x27; can be made static&#x27;
+      FilePath:        &#x27;/workspace/src/Calculator.cpp&#x27;
+      FileOffset:      43
+      Replacements:
+        - FilePath:        &#x27;/workspace/include/Calculator.hpp&#x27;
+          Offset:          67
+          Length:          0
+          ReplacementText: &#x27;static &#x27;
+        - FilePath:        &#x27;/workspace/include/Calculator.hpp&#x27;
+          Offset:          96
+          Length:          5
+          ReplacementText: &#x27;&#x27;
+        - FilePath:        &#x27;/workspace/src/Calculator.cpp&#x27;
+          Offset:          68
+          Length:          6
+          ReplacementText: &#x27;&#x27;
+    Level:           Warning
+    BuildDirectory:  &#x27;/workspace/build&#x27;
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        &#x27;/workspace/src/Calculator.cpp&#x27;
+      FileOffset:      120
+      Replacements:    []
+    Notes:
+      - Message:         this fix will not be applied because it overlaps with another fix
+        FilePath:        &#x27;&#x27;
+        FileOffset:      0
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  &#x27;/workspace/build&#x27;
+  - DiagnosticName:  readability-convert-member-functions-to-static
+    DiagnosticMessage:
+      Message:         &#x27;method &#x27;&#x27;subtract&#x27;&#x27; can be made static&#x27;
+      FilePath:        &#x27;/workspace/src/Calculator.cpp&#x27;
+      FileOffset:      120
+      Replacements:
+        - FilePath:        &#x27;/workspace/include/Calculator.hpp&#x27;
+          Offset:          107
+          Length:          0
+          ReplacementText: &#x27;static &#x27;
+        - FilePath:        &#x27;/workspace/include/Calculator.hpp&#x27;
+          Offset:          141
+          Length:          5
+          ReplacementText: &#x27;&#x27;
+        - FilePath:        &#x27;/workspace/src/Calculator.cpp&#x27;
+          Offset:          150
+          Length:          6
+          ReplacementText: &#x27;&#x27;
+    Level:           Warning
+    BuildDirectory:  &#x27;/workspace/build&#x27;
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        &#x27;/workspace/src/Calculator.cpp&#x27;
+      FileOffset:      202
+      Replacements:    []
+    Notes:
+      - Message:         this fix will not be applied because it overlaps with another fix
+        FilePath:        &#x27;&#x27;
+        FileOffset:      0
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  &#x27;/workspace/build&#x27;
+  - DiagnosticName:  readability-convert-member-functions-to-static
+    DiagnosticMessage:
+      Message:         &#x27;method &#x27;&#x27;multiply&#x27;&#x27; can be made static&#x27;
+      FilePath:        &#x27;/workspace/src/Calculator.cpp&#x27;
+      FileOffset:      202
+      Replacements:
+        - FilePath:        &#x27;/workspace/include/Calculator.hpp&#x27;
+          Offset:          152
+          Length:          0
+          ReplacementText: &#x27;static &#x27;
+        - FilePath:        &#x27;/workspace/include/Calculator.hpp&#x27;
+          Offset:          186
+          Length:          5
+          ReplacementText: &#x27;&#x27;
+        - FilePath:        &#x27;/workspace/src/Calculator.cpp&#x27;
+          Offset:          232
+          Length:          6
+          ReplacementText: &#x27;&#x27;
+    Level:           Warning
+    BuildDirectory:  &#x27;/workspace/build&#x27;
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        &#x27;/workspace/src/Calculator.cpp&#x27;
+      FileOffset:      284
+      Replacements:    []
+    Notes:
+      - Message:         this fix will not be applied because it overlaps with another fix
+        FilePath:        &#x27;&#x27;
+        FileOffset:      0
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  &#x27;/workspace/build&#x27;
+  - DiagnosticName:  readability-convert-member-functions-to-static
+    DiagnosticMessage:
+      Message:         &#x27;method &#x27;&#x27;divide&#x27;&#x27; can be made static&#x27;
+      FilePath:        &#x27;/workspace/src/Calculator.cpp&#x27;
+      FileOffset:      284
+      Replacements:
+        - FilePath:        &#x27;/workspace/include/Calculator.hpp&#x27;
+          Offset:          197
+          Length:          0
+          ReplacementText: &#x27;static &#x27;
+        - FilePath:        &#x27;/workspace/include/Calculator.hpp&#x27;
+          Offset:          229
+          Length:          5
+          ReplacementText: &#x27;&#x27;
+        - FilePath:        &#x27;/workspace/src/Calculator.cpp&#x27;
+          Offset:          312
+          Length:          6
+          ReplacementText: &#x27;&#x27;
+    Level:           Warning
+    BuildDirectory:  &#x27;/workspace/build&#x27;
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        &#x27;/workspace/src/CalculatorService.cpp&#x27;
+      FileOffset:      110
+      Replacements:
+        - FilePath:        &#x27;/workspace/src/CalculatorService.cpp&#x27;
+          Offset:          87
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        &#x27;/workspace/src/CalculatorService.cpp&#x27;
+          Offset:          155
+          Length:          0
+          ReplacementText: &#x27; -&gt; int&#x27;
+    Level:           Warning
+    BuildDirectory:  &#x27;/workspace/build&#x27;
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        &#x27;/workspace/src/ExpressionParser.cpp&#x27;
+      FileOffset:      142
+      Replacements:
+        - FilePath:        &#x27;/workspace/src/ExpressionParser.cpp&#x27;
+          Offset:          130
+          Length:          11
+          ReplacementText: auto
+        - FilePath:        &#x27;/workspace/src/ExpressionParser.cpp&#x27;
+          Offset:          180
+          Length:          0
+          ReplacementText: &#x27; -&gt; std::string&#x27;
+    Level:           Warning
+    BuildDirectory:  &#x27;/workspace/build&#x27;
+  - DiagnosticName:  readability-implicit-bool-conversion
+    DiagnosticMessage:
+      Message:         &#x27;implicit conversion &#x27;&#x27;int&#x27;&#x27; -&gt; &#x27;&#x27;bool&#x27;&#x27;&#x27;
+      FilePath:        &#x27;/workspace/src/ExpressionParser.cpp&#x27;
+      FileOffset:      261
+      Replacements:
+        - FilePath:        &#x27;/workspace/src/ExpressionParser.cpp&#x27;
+          Offset:          260
+          Length:          1
+          ReplacementText: &#x27;&#x27;
+        - FilePath:        &#x27;/workspace/src/ExpressionParser.cpp&#x27;
+          Offset:          312
+          Length:          0
+          ReplacementText: &#x27; == 0&#x27;
+    Level:           Warning
+    BuildDirectory:  &#x27;/workspace/build&#x27;
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        &#x27;/workspace/src/ExpressionParser.cpp&#x27;
+      FileOffset:      399
+      Replacements:
+        - FilePath:        &#x27;/workspace/src/ExpressionParser.cpp&#x27;
+          Offset:          395
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        &#x27;/workspace/src/ExpressionParser.cpp&#x27;
+          Offset:          437
+          Length:          0
+          ReplacementText: &#x27; -&gt; int&#x27;
+    Level:           Warning
+    BuildDirectory:  &#x27;/workspace/build&#x27;
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        &#x27;/workspace/src/ExpressionParser.cpp&#x27;
+      FileOffset:      904
+      Replacements:    []
+    Notes:
+      - Message:         this fix will not be applied because it overlaps with another fix
+        FilePath:        &#x27;&#x27;
+        FileOffset:      0
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  &#x27;/workspace/build&#x27;
+  - DiagnosticName:  readability-convert-member-functions-to-static
+    DiagnosticMessage:
+      Message:         &#x27;method &#x27;&#x27;evaluate&#x27;&#x27; can be made static&#x27;
+      FilePath:        &#x27;/workspace/src/ExpressionParser.cpp&#x27;
+      FileOffset:      904
+      Replacements:
+        - FilePath:        &#x27;/workspace/include/ExpressionParser.hpp&#x27;
+          Offset:          70
+          Length:          0
+          ReplacementText: &#x27;static &#x27;
+        - FilePath:        &#x27;/workspace/include/ExpressionParser.hpp&#x27;
+          Offset:          114
+          Length:          5
+          ReplacementText: &#x27;&#x27;
+        - FilePath:        &#x27;/workspace/src/ExpressionParser.cpp&#x27;
+          Offset:          944
+          Length:          6
+          ReplacementText: &#x27;&#x27;
+    Level:           Warning
+    BuildDirectory:  &#x27;/workspace/build&#x27;
+  - DiagnosticName:  readability-identifier-length
+    DiagnosticMessage:
+      Message:         &#x27;variable name &#x27;&#x27;op&#x27;&#x27; is too short, expected at least 3 characters&#x27;
+      FilePath:        &#x27;/workspace/src/ExpressionParser.cpp&#x27;
+      FileOffset:      1164
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  &#x27;/workspace/build&#x27;
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        &#x27;/workspace/src/main.cpp&#x27;
+      FileOffset:      97
+      Replacements:
+        - FilePath:        &#x27;/workspace/src/main.cpp&#x27;
+          Offset:          93
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        &#x27;/workspace/src/main.cpp&#x27;
+          Offset:          124
+          Length:          0
+          ReplacementText: &#x27; -&gt; int&#x27;
+    Level:           Warning
+    BuildDirectory:  &#x27;/workspace/build&#x27;
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        &#x27;/workspace/tests/CalculatorParameterizedTest.cpp&#x27;
+      FileOffset:      464
+      Replacements:
+        - FilePath:        &#x27;/workspace/tests/CalculatorParameterizedTest.cpp&#x27;
+          Offset:          452
+          Length:          11
+          ReplacementText: auto
+        - FilePath:        &#x27;/workspace/tests/CalculatorParameterizedTest.cpp&#x27;
+          Offset:          537
+          Length:          0
+          ReplacementText: &#x27; -&gt; std::string&#x27;
+    Level:           Warning
+    BuildDirectory:  &#x27;/workspace/build&#x27;
+  - DiagnosticName:  readability-implicit-bool-conversion
+    DiagnosticMessage:
+      Message:         &#x27;implicit conversion &#x27;&#x27;int&#x27;&#x27; -&gt; &#x27;&#x27;bool&#x27;&#x27;&#x27;
+      FilePath:        &#x27;/workspace/tests/CalculatorParameterizedTest.cpp&#x27;
+      FileOffset:      634
+      Replacements:
+        - FilePath:        &#x27;/workspace/tests/CalculatorParameterizedTest.cpp&#x27;
+          Offset:          633
+          Length:          1
+          ReplacementText: &#x27;&#x27;
+        - FilePath:        &#x27;/workspace/tests/CalculatorParameterizedTest.cpp&#x27;
+          Offset:          685
+          Length:          0
+          ReplacementText: &#x27; == 0&#x27;
+    Level:           Warning
+    BuildDirectory:  &#x27;/workspace/build&#x27;
+...
+</pre>
+</body>
+</html>

@@ -1,0 +1,1200 @@
+<?xml version="1.0"?>
+
+<valgrindoutput>
+
+<protocolversion>4</protocolversion>
+<protocoltool>memcheck</protocoltool>
+
+<preamble>
+  <line>Memcheck, a memory error detector</line>
+  <line>Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.</line>
+  <line>Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info</line>
+  <line>Command: build/calculator_tests</line>
+</preamble>
+
+<pid>22</pid>
+<ppid>1</ppid>
+<tool>memcheck</tool>
+
+<args>
+  <vargv>
+    <exe>/usr/bin/valgrind.bin</exe>
+    <arg>--leak-check=full</arg>
+    <arg>--show-leak-kinds=all</arg>
+    <arg>--track-origins=yes</arg>
+    <arg>--num-callers=50</arg>
+    <arg>--error-exitcode=1</arg>
+    <arg>--xml=yes</arg>
+    <arg>--xml-file=reports/valgrind/valgrind.xml</arg>
+  </vargv>
+  <argv>
+    <exe>build/calculator_tests</exe>
+  </argv>
+</args>
+
+<status>
+  <state>RUNNING</state>
+  <time>00:00:00:00.146 </time>
+</status>
+
+<error>
+  <unique>0x0</unique>
+  <tid>1</tid>
+  <kind>UninitValue</kind>
+  <what>Use of uninitialised value of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x4C51052</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libc.so.6</obj>
+      <fn>_itoa_word</fn>
+      <dir>./stdio-common/./stdio-common</dir>
+      <file>_itoa.c</file>
+      <line>184</line>
+    </frame>
+    <frame>
+      <ip>0x4C5BC9B</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libc.so.6</obj>
+      <fn>__printf_buffer</fn>
+      <dir>./stdio-common/./stdio-common</dir>
+      <file>vfprintf-process-arg.c</file>
+      <line>155</line>
+    </frame>
+    <frame>
+      <ip>0x4C81CC5</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libc.so.6</obj>
+      <fn>__vsnprintf_internal</fn>
+      <dir>./libio/./libio</dir>
+      <file>vsnprintf.c</file>
+      <line>96</line>
+    </frame>
+    <frame>
+      <ip>0x4C58405</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libc.so.6</obj>
+      <fn>snprintf</fn>
+      <dir>./stdio-common/./stdio-common</dir>
+      <file>snprintf.c</file>
+      <line>31</line>
+    </frame>
+    <frame>
+      <ip>0x14250C</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::(anonymous namespace)::PrintByteSegmentInObjectTo(unsigned char const*, unsigned long, unsigned long, std::ostream*)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest-printers.cc</file>
+      <line>83</line>
+    </frame>
+    <frame>
+      <ip>0x1425BC</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::(anonymous namespace)::PrintBytesInObjectToImpl(unsigned char const*, unsigned long, std::ostream*)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest-printers.cc</file>
+      <line>100</line>
+    </frame>
+    <frame>
+      <ip>0x142668</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::internal::PrintBytesInObjectTo(unsigned char const*, unsigned long, std::ostream*)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest-printers.cc</file>
+      <line>132</line>
+    </frame>
+    <frame>
+      <ip>0x1277D8</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>void testing::internal::RawBytesPrinter::PrintValue&lt;ExpressionCase, 40ul&gt;(ExpressionCase const&amp;, std::ostream*)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/include/gtest</dir>
+      <file>gtest-printers.h</file>
+      <line>312</line>
+    </frame>
+    <frame>
+      <ip>0x1276C1</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>void testing::internal::PrintWithFallback&lt;ExpressionCase&gt;(ExpressionCase const&amp;, std::ostream*)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/include/gtest</dir>
+      <file>gtest-printers.h</file>
+      <line>358</line>
+    </frame>
+    <frame>
+      <ip>0x127446</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>void testing::internal::PrintTo&lt;ExpressionCase&gt;(ExpressionCase const&amp;, std::ostream*)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/include/gtest</dir>
+      <file>gtest-printers.h</file>
+      <line>487</line>
+    </frame>
+    <frame>
+      <ip>0x127243</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::internal::UniversalPrinter&lt;ExpressionCase&gt;::Print(ExpressionCase const&amp;, std::ostream*)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/include/gtest</dir>
+      <file>gtest-printers.h</file>
+      <line>844</line>
+    </frame>
+    <frame>
+      <ip>0x126E33</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>void testing::internal::UniversalPrint&lt;ExpressionCase&gt;(ExpressionCase const&amp;, std::ostream*)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/include/gtest</dir>
+      <file>gtest-printers.h</file>
+      <line>1148</line>
+    </frame>
+    <frame>
+      <ip>0x1265D9</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::internal::UniversalTersePrinter&lt;ExpressionCase&gt;::Print(ExpressionCase const&amp;, std::ostream*)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/include/gtest</dir>
+      <file>gtest-printers.h</file>
+      <line>1026</line>
+    </frame>
+    <frame>
+      <ip>0x125C0A</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; testing::PrintToString&lt;ExpressionCase&gt;(ExpressionCase const&amp;)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/include/gtest</dir>
+      <file>gtest-printers.h</file>
+      <line>1186</line>
+    </frame>
+    <frame>
+      <ip>0x1250E4</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::internal::ParameterizedTestSuiteInfo&lt;ExpressionParameterizedTest&gt;::RegisterTests()</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/include/gtest/internal</dir>
+      <file>gtest-param-util.h</file>
+      <line>600</line>
+    </frame>
+    <frame>
+      <ip>0x16A12F</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::internal::ParameterizedTestSuiteRegistry::RegisterTests()</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/include/gtest/internal</dir>
+      <file>gtest-param-util.h</file>
+      <line>736</line>
+    </frame>
+    <frame>
+      <ip>0x14E343</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::internal::UnitTestImpl::RegisterParameterizedTests()</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest.cc</file>
+      <line>2822</line>
+    </frame>
+    <frame>
+      <ip>0x15FA39</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::internal::UnitTestImpl::PostFlagParsingInit()</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest.cc</file>
+      <line>5752</line>
+    </frame>
+    <frame>
+      <ip>0x1794E9</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>void testing::internal::InitGoogleTestImpl&lt;char&gt;(int*, char**)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest.cc</file>
+      <line>6834</line>
+    </frame>
+    <frame>
+      <ip>0x162E6D</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::InitGoogleTest(int*, char**)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest.cc</file>
+      <line>6852</line>
+    </frame>
+    <frame>
+      <ip>0x194406</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>main</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest_main.cc</file>
+      <line>63</line>
+    </frame>
+  </stack>
+  <auxwhat>Uninitialised value was created by a heap allocation</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x4846FA3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x127AD0</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::internal::ValuesInIteratorRangeGenerator&lt;ExpressionCase&gt;::Iterator::Current() const</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/include/gtest/internal</dir>
+      <file>gtest-param-util.h</file>
+      <line>340</line>
+    </frame>
+    <frame>
+      <ip>0x12599E</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::internal::ParamIterator&lt;ExpressionCase&gt;::operator*() const</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/include/gtest/internal</dir>
+      <file>gtest-param-util.h</file>
+      <line>142</line>
+    </frame>
+    <frame>
+      <ip>0x124CE0</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::internal::ParameterizedTestSuiteInfo&lt;ExpressionParameterizedTest&gt;::RegisterTests()</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/include/gtest/internal</dir>
+      <file>gtest-param-util.h</file>
+      <line>575</line>
+    </frame>
+    <frame>
+      <ip>0x16A12F</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::internal::ParameterizedTestSuiteRegistry::RegisterTests()</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/include/gtest/internal</dir>
+      <file>gtest-param-util.h</file>
+      <line>736</line>
+    </frame>
+    <frame>
+      <ip>0x14E343</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::internal::UnitTestImpl::RegisterParameterizedTests()</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest.cc</file>
+      <line>2822</line>
+    </frame>
+    <frame>
+      <ip>0x15FA39</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::internal::UnitTestImpl::PostFlagParsingInit()</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest.cc</file>
+      <line>5752</line>
+    </frame>
+    <frame>
+      <ip>0x1794E9</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>void testing::internal::InitGoogleTestImpl&lt;char&gt;(int*, char**)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest.cc</file>
+      <line>6834</line>
+    </frame>
+    <frame>
+      <ip>0x162E6D</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::InitGoogleTest(int*, char**)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest.cc</file>
+      <line>6852</line>
+    </frame>
+    <frame>
+      <ip>0x194406</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>main</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest_main.cc</file>
+      <line>63</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x1</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x4C51064</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libc.so.6</obj>
+      <fn>_itoa_word</fn>
+      <dir>./stdio-common/./stdio-common</dir>
+      <file>_itoa.c</file>
+      <line>184</line>
+    </frame>
+    <frame>
+      <ip>0x4C5BC9B</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libc.so.6</obj>
+      <fn>__printf_buffer</fn>
+      <dir>./stdio-common/./stdio-common</dir>
+      <file>vfprintf-process-arg.c</file>
+      <line>155</line>
+    </frame>
+    <frame>
+      <ip>0x4C81CC5</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libc.so.6</obj>
+      <fn>__vsnprintf_internal</fn>
+      <dir>./libio/./libio</dir>
+      <file>vsnprintf.c</file>
+      <line>96</line>
+    </frame>
+    <frame>
+      <ip>0x4C58405</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libc.so.6</obj>
+      <fn>snprintf</fn>
+      <dir>./stdio-common/./stdio-common</dir>
+      <file>snprintf.c</file>
+      <line>31</line>
+    </frame>
+    <frame>
+      <ip>0x14250C</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::(anonymous namespace)::PrintByteSegmentInObjectTo(unsigned char const*, unsigned long, unsigned long, std::ostream*)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest-printers.cc</file>
+      <line>83</line>
+    </frame>
+    <frame>
+      <ip>0x1425BC</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::(anonymous namespace)::PrintBytesInObjectToImpl(unsigned char const*, unsigned long, std::ostream*)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest-printers.cc</file>
+      <line>100</line>
+    </frame>
+    <frame>
+      <ip>0x142668</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::internal::PrintBytesInObjectTo(unsigned char const*, unsigned long, std::ostream*)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest-printers.cc</file>
+      <line>132</line>
+    </frame>
+    <frame>
+      <ip>0x1277D8</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>void testing::internal::RawBytesPrinter::PrintValue&lt;ExpressionCase, 40ul&gt;(ExpressionCase const&amp;, std::ostream*)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/include/gtest</dir>
+      <file>gtest-printers.h</file>
+      <line>312</line>
+    </frame>
+    <frame>
+      <ip>0x1276C1</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>void testing::internal::PrintWithFallback&lt;ExpressionCase&gt;(ExpressionCase const&amp;, std::ostream*)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/include/gtest</dir>
+      <file>gtest-printers.h</file>
+      <line>358</line>
+    </frame>
+    <frame>
+      <ip>0x127446</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>void testing::internal::PrintTo&lt;ExpressionCase&gt;(ExpressionCase const&amp;, std::ostream*)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/include/gtest</dir>
+      <file>gtest-printers.h</file>
+      <line>487</line>
+    </frame>
+    <frame>
+      <ip>0x127243</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::internal::UniversalPrinter&lt;ExpressionCase&gt;::Print(ExpressionCase const&amp;, std::ostream*)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/include/gtest</dir>
+      <file>gtest-printers.h</file>
+      <line>844</line>
+    </frame>
+    <frame>
+      <ip>0x126E33</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>void testing::internal::UniversalPrint&lt;ExpressionCase&gt;(ExpressionCase const&amp;, std::ostream*)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/include/gtest</dir>
+      <file>gtest-printers.h</file>
+      <line>1148</line>
+    </frame>
+    <frame>
+      <ip>0x1265D9</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::internal::UniversalTersePrinter&lt;ExpressionCase&gt;::Print(ExpressionCase const&amp;, std::ostream*)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/include/gtest</dir>
+      <file>gtest-printers.h</file>
+      <line>1026</line>
+    </frame>
+    <frame>
+      <ip>0x125C0A</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; testing::PrintToString&lt;ExpressionCase&gt;(ExpressionCase const&amp;)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/include/gtest</dir>
+      <file>gtest-printers.h</file>
+      <line>1186</line>
+    </frame>
+    <frame>
+      <ip>0x1250E4</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::internal::ParameterizedTestSuiteInfo&lt;ExpressionParameterizedTest&gt;::RegisterTests()</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/include/gtest/internal</dir>
+      <file>gtest-param-util.h</file>
+      <line>600</line>
+    </frame>
+    <frame>
+      <ip>0x16A12F</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::internal::ParameterizedTestSuiteRegistry::RegisterTests()</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/include/gtest/internal</dir>
+      <file>gtest-param-util.h</file>
+      <line>736</line>
+    </frame>
+    <frame>
+      <ip>0x14E343</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::internal::UnitTestImpl::RegisterParameterizedTests()</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest.cc</file>
+      <line>2822</line>
+    </frame>
+    <frame>
+      <ip>0x15FA39</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::internal::UnitTestImpl::PostFlagParsingInit()</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest.cc</file>
+      <line>5752</line>
+    </frame>
+    <frame>
+      <ip>0x1794E9</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>void testing::internal::InitGoogleTestImpl&lt;char&gt;(int*, char**)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest.cc</file>
+      <line>6834</line>
+    </frame>
+    <frame>
+      <ip>0x162E6D</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::InitGoogleTest(int*, char**)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest.cc</file>
+      <line>6852</line>
+    </frame>
+    <frame>
+      <ip>0x194406</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>main</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest_main.cc</file>
+      <line>63</line>
+    </frame>
+  </stack>
+  <auxwhat>Uninitialised value was created by a heap allocation</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x4846FA3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x127AD0</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::internal::ValuesInIteratorRangeGenerator&lt;ExpressionCase&gt;::Iterator::Current() const</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/include/gtest/internal</dir>
+      <file>gtest-param-util.h</file>
+      <line>340</line>
+    </frame>
+    <frame>
+      <ip>0x12599E</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::internal::ParamIterator&lt;ExpressionCase&gt;::operator*() const</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/include/gtest/internal</dir>
+      <file>gtest-param-util.h</file>
+      <line>142</line>
+    </frame>
+    <frame>
+      <ip>0x124CE0</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::internal::ParameterizedTestSuiteInfo&lt;ExpressionParameterizedTest&gt;::RegisterTests()</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/include/gtest/internal</dir>
+      <file>gtest-param-util.h</file>
+      <line>575</line>
+    </frame>
+    <frame>
+      <ip>0x16A12F</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::internal::ParameterizedTestSuiteRegistry::RegisterTests()</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/include/gtest/internal</dir>
+      <file>gtest-param-util.h</file>
+      <line>736</line>
+    </frame>
+    <frame>
+      <ip>0x14E343</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::internal::UnitTestImpl::RegisterParameterizedTests()</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest.cc</file>
+      <line>2822</line>
+    </frame>
+    <frame>
+      <ip>0x15FA39</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::internal::UnitTestImpl::PostFlagParsingInit()</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest.cc</file>
+      <line>5752</line>
+    </frame>
+    <frame>
+      <ip>0x1794E9</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>void testing::internal::InitGoogleTestImpl&lt;char&gt;(int*, char**)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest.cc</file>
+      <line>6834</line>
+    </frame>
+    <frame>
+      <ip>0x162E6D</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::InitGoogleTest(int*, char**)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest.cc</file>
+      <line>6852</line>
+    </frame>
+    <frame>
+      <ip>0x194406</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>main</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest_main.cc</file>
+      <line>63</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x2</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x4C5BD85</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libc.so.6</obj>
+      <fn>__printf_buffer</fn>
+      <dir>./stdio-common/./stdio-common</dir>
+      <file>vfprintf-process-arg.c</file>
+      <line>186</line>
+    </frame>
+    <frame>
+      <ip>0x4C81CC5</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libc.so.6</obj>
+      <fn>__vsnprintf_internal</fn>
+      <dir>./libio/./libio</dir>
+      <file>vsnprintf.c</file>
+      <line>96</line>
+    </frame>
+    <frame>
+      <ip>0x4C58405</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libc.so.6</obj>
+      <fn>snprintf</fn>
+      <dir>./stdio-common/./stdio-common</dir>
+      <file>snprintf.c</file>
+      <line>31</line>
+    </frame>
+    <frame>
+      <ip>0x14250C</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::(anonymous namespace)::PrintByteSegmentInObjectTo(unsigned char const*, unsigned long, unsigned long, std::ostream*)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest-printers.cc</file>
+      <line>83</line>
+    </frame>
+    <frame>
+      <ip>0x1425BC</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::(anonymous namespace)::PrintBytesInObjectToImpl(unsigned char const*, unsigned long, std::ostream*)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest-printers.cc</file>
+      <line>100</line>
+    </frame>
+    <frame>
+      <ip>0x142668</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::internal::PrintBytesInObjectTo(unsigned char const*, unsigned long, std::ostream*)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest-printers.cc</file>
+      <line>132</line>
+    </frame>
+    <frame>
+      <ip>0x1277D8</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>void testing::internal::RawBytesPrinter::PrintValue&lt;ExpressionCase, 40ul&gt;(ExpressionCase const&amp;, std::ostream*)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/include/gtest</dir>
+      <file>gtest-printers.h</file>
+      <line>312</line>
+    </frame>
+    <frame>
+      <ip>0x1276C1</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>void testing::internal::PrintWithFallback&lt;ExpressionCase&gt;(ExpressionCase const&amp;, std::ostream*)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/include/gtest</dir>
+      <file>gtest-printers.h</file>
+      <line>358</line>
+    </frame>
+    <frame>
+      <ip>0x127446</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>void testing::internal::PrintTo&lt;ExpressionCase&gt;(ExpressionCase const&amp;, std::ostream*)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/include/gtest</dir>
+      <file>gtest-printers.h</file>
+      <line>487</line>
+    </frame>
+    <frame>
+      <ip>0x127243</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::internal::UniversalPrinter&lt;ExpressionCase&gt;::Print(ExpressionCase const&amp;, std::ostream*)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/include/gtest</dir>
+      <file>gtest-printers.h</file>
+      <line>844</line>
+    </frame>
+    <frame>
+      <ip>0x126E33</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>void testing::internal::UniversalPrint&lt;ExpressionCase&gt;(ExpressionCase const&amp;, std::ostream*)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/include/gtest</dir>
+      <file>gtest-printers.h</file>
+      <line>1148</line>
+    </frame>
+    <frame>
+      <ip>0x1265D9</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::internal::UniversalTersePrinter&lt;ExpressionCase&gt;::Print(ExpressionCase const&amp;, std::ostream*)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/include/gtest</dir>
+      <file>gtest-printers.h</file>
+      <line>1026</line>
+    </frame>
+    <frame>
+      <ip>0x125C0A</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; testing::PrintToString&lt;ExpressionCase&gt;(ExpressionCase const&amp;)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/include/gtest</dir>
+      <file>gtest-printers.h</file>
+      <line>1186</line>
+    </frame>
+    <frame>
+      <ip>0x1250E4</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::internal::ParameterizedTestSuiteInfo&lt;ExpressionParameterizedTest&gt;::RegisterTests()</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/include/gtest/internal</dir>
+      <file>gtest-param-util.h</file>
+      <line>600</line>
+    </frame>
+    <frame>
+      <ip>0x16A12F</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::internal::ParameterizedTestSuiteRegistry::RegisterTests()</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/include/gtest/internal</dir>
+      <file>gtest-param-util.h</file>
+      <line>736</line>
+    </frame>
+    <frame>
+      <ip>0x14E343</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::internal::UnitTestImpl::RegisterParameterizedTests()</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest.cc</file>
+      <line>2822</line>
+    </frame>
+    <frame>
+      <ip>0x15FA39</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::internal::UnitTestImpl::PostFlagParsingInit()</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest.cc</file>
+      <line>5752</line>
+    </frame>
+    <frame>
+      <ip>0x1794E9</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>void testing::internal::InitGoogleTestImpl&lt;char&gt;(int*, char**)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest.cc</file>
+      <line>6834</line>
+    </frame>
+    <frame>
+      <ip>0x162E6D</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::InitGoogleTest(int*, char**)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest.cc</file>
+      <line>6852</line>
+    </frame>
+    <frame>
+      <ip>0x194406</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>main</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest_main.cc</file>
+      <line>63</line>
+    </frame>
+  </stack>
+  <auxwhat>Uninitialised value was created by a heap allocation</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x4846FA3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x127AD0</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::internal::ValuesInIteratorRangeGenerator&lt;ExpressionCase&gt;::Iterator::Current() const</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/include/gtest/internal</dir>
+      <file>gtest-param-util.h</file>
+      <line>340</line>
+    </frame>
+    <frame>
+      <ip>0x12599E</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::internal::ParamIterator&lt;ExpressionCase&gt;::operator*() const</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/include/gtest/internal</dir>
+      <file>gtest-param-util.h</file>
+      <line>142</line>
+    </frame>
+    <frame>
+      <ip>0x124CE0</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::internal::ParameterizedTestSuiteInfo&lt;ExpressionParameterizedTest&gt;::RegisterTests()</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/include/gtest/internal</dir>
+      <file>gtest-param-util.h</file>
+      <line>575</line>
+    </frame>
+    <frame>
+      <ip>0x16A12F</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::internal::ParameterizedTestSuiteRegistry::RegisterTests()</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/include/gtest/internal</dir>
+      <file>gtest-param-util.h</file>
+      <line>736</line>
+    </frame>
+    <frame>
+      <ip>0x14E343</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::internal::UnitTestImpl::RegisterParameterizedTests()</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest.cc</file>
+      <line>2822</line>
+    </frame>
+    <frame>
+      <ip>0x15FA39</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::internal::UnitTestImpl::PostFlagParsingInit()</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest.cc</file>
+      <line>5752</line>
+    </frame>
+    <frame>
+      <ip>0x1794E9</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>void testing::internal::InitGoogleTestImpl&lt;char&gt;(int*, char**)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest.cc</file>
+      <line>6834</line>
+    </frame>
+    <frame>
+      <ip>0x162E6D</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::InitGoogleTest(int*, char**)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest.cc</file>
+      <line>6852</line>
+    </frame>
+    <frame>
+      <ip>0x194406</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>main</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest_main.cc</file>
+      <line>63</line>
+    </frame>
+  </stack>
+</error>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:01.164 </time>
+</status>
+
+<error>
+  <unique>0xe7</unique>
+  <tid>1</tid>
+  <kind>Leak_StillReachable</kind>
+  <xwhat>
+    <text>56 bytes in 1 blocks are still reachable in loss record 1 of 2</text>
+    <leakedbytes>56</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4846FA3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x19938D</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::(anonymous namespace)::UninterestingCallReactionMap()</fn>
+      <dir>/workspace/build/_deps/googletest-src/googlemock/src</dir>
+      <file>gmock-spec-builders.cc</file>
+      <line>553</line>
+    </frame>
+    <frame>
+      <ip>0x199423</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::(anonymous namespace)::SetReactionOnUninterestingCalls(unsigned long, testing::internal::CallReaction)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googlemock/src</dir>
+      <file>gmock-spec-builders.cc</file>
+      <line>563</line>
+    </frame>
+    <frame>
+      <ip>0x1994FA</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::Mock::FailUninterestingCalls(unsigned long)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googlemock/src</dir>
+      <file>gmock-spec-builders.cc</file>
+      <line>586</line>
+    </frame>
+    <frame>
+      <ip>0x12D035</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::internal::StrictMockImpl&lt;MockOperationLogger&gt;::StrictMockImpl()</fn>
+      <dir>/workspace/build/_deps/googletest-src/googlemock/include/gmock</dir>
+      <file>gmock-nice-strict.h</file>
+      <line>138</line>
+    </frame>
+    <frame>
+      <ip>0x12AEEE</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::StrictMock&lt;MockOperationLogger&gt;::StrictMock()</fn>
+      <dir>/workspace/build/_deps/googletest-src/googlemock/include/gmock</dir>
+      <file>gmock-nice-strict.h</file>
+      <line>242</line>
+    </frame>
+    <frame>
+      <ip>0x127FF2</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>CalculatorServiceMockTest_LogsSuccessWhenExpressionIsValid_Test::TestBody()</fn>
+      <dir>/workspace/tests</dir>
+      <file>CalculatorMockTest.cpp</file>
+      <line>15</line>
+    </frame>
+    <frame>
+      <ip>0x17E650</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>void testing::internal::HandleSehExceptionsInMethodIfSupported&lt;testing::Test, void&gt;(testing::Test*, void (testing::Test::*)(), char const*)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest.cc</file>
+      <line>2638</line>
+    </frame>
+    <frame>
+      <ip>0x1761BE</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>void testing::internal::HandleExceptionsInMethodIfSupported&lt;testing::Test, void&gt;(testing::Test*, void (testing::Test::*)(), char const*)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest.cc</file>
+      <line>2674</line>
+    </frame>
+    <frame>
+      <ip>0x14D9B1</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::Test::Run()</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest.cc</file>
+      <line>2713</line>
+    </frame>
+    <frame>
+      <ip>0x14E4DB</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::TestInfo::Run()</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest.cc</file>
+      <line>2859</line>
+    </frame>
+    <frame>
+      <ip>0x14EEC7</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::TestSuite::Run()</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest.cc</file>
+      <line>3037</line>
+    </frame>
+    <frame>
+      <ip>0x16038A</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::internal::UnitTestImpl::RunAllTests()</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest.cc</file>
+      <line>5967</line>
+    </frame>
+    <frame>
+      <ip>0x17F7FD</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>bool testing::internal::HandleSehExceptionsInMethodIfSupported&lt;testing::internal::UnitTestImpl, bool&gt;(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest.cc</file>
+      <line>2638</line>
+    </frame>
+    <frame>
+      <ip>0x177656</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>bool testing::internal::HandleExceptionsInMethodIfSupported&lt;testing::internal::UnitTestImpl, bool&gt;(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest.cc</file>
+      <line>2674</line>
+    </frame>
+    <frame>
+      <ip>0x15E851</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::UnitTest::Run()</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest.cc</file>
+      <line>5546</line>
+    </frame>
+    <frame>
+      <ip>0x194423</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>RUN_ALL_TESTS()</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/include/gtest</dir>
+      <file>gtest.h</file>
+      <line>2334</line>
+    </frame>
+    <frame>
+      <ip>0x19440B</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>main</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest_main.cc</file>
+      <line>64</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0xe8</unique>
+  <tid>1</tid>
+  <kind>Leak_StillReachable</kind>
+  <xwhat>
+    <text>104 bytes in 1 blocks are still reachable in loss record 2 of 2</text>
+    <leakedbytes>104</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4846FA3</ip>
+      <obj>/usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x12433F</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>std::__new_allocator&lt;std::__detail::_Hash_node_base*&gt;::allocate(unsigned long, void const*)</fn>
+      <dir>/usr/include/c++/13/bits</dir>
+      <file>new_allocator.h</file>
+      <line>151</line>
+    </frame>
+    <frame>
+      <ip>0x1A6973</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>allocate</fn>
+      <dir>/usr/include/c++/13/bits</dir>
+      <file>alloc_traits.h</file>
+      <line>482</line>
+    </frame>
+    <frame>
+      <ip>0x1A6973</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>std::__detail::_Hashtable_alloc&lt;std::allocator&lt;std::__detail::_Hash_node&lt;std::pair&lt;unsigned long const, testing::internal::CallReaction&gt;, false&gt; &gt; &gt;::_M_allocate_buckets(unsigned long)</fn>
+      <dir>/usr/include/c++/13/bits</dir>
+      <file>hashtable_policy.h</file>
+      <line>2044</line>
+    </frame>
+    <frame>
+      <ip>0x1A64E6</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>std::_Hashtable&lt;unsigned long, std::pair&lt;unsigned long const, testing::internal::CallReaction&gt;, std::allocator&lt;std::pair&lt;unsigned long const, testing::internal::CallReaction&gt; &gt;, std::__detail::_Select1st, std::equal_to&lt;unsigned long&gt;, std::hash&lt;unsigned long&gt;, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits&lt;false, false, true&gt; &gt;::_M_allocate_buckets(unsigned long)</fn>
+      <dir>/usr/include/c++/13/bits</dir>
+      <file>hashtable.h</file>
+      <line>442</line>
+    </frame>
+    <frame>
+      <ip>0x1A5B44</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>std::_Hashtable&lt;unsigned long, std::pair&lt;unsigned long const, testing::internal::CallReaction&gt;, std::allocator&lt;std::pair&lt;unsigned long const, testing::internal::CallReaction&gt; &gt;, std::__detail::_Select1st, std::equal_to&lt;unsigned long&gt;, std::hash&lt;unsigned long&gt;, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits&lt;false, false, true&gt; &gt;::_M_rehash_aux(unsigned long, std::integral_constant&lt;bool, true&gt;)</fn>
+      <dir>/usr/include/c++/13/bits</dir>
+      <file>hashtable.h</file>
+      <line>2586</line>
+    </frame>
+    <frame>
+      <ip>0x1A45C1</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>std::_Hashtable&lt;unsigned long, std::pair&lt;unsigned long const, testing::internal::CallReaction&gt;, std::allocator&lt;std::pair&lt;unsigned long const, testing::internal::CallReaction&gt; &gt;, std::__detail::_Select1st, std::equal_to&lt;unsigned long&gt;, std::hash&lt;unsigned long&gt;, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits&lt;false, false, true&gt; &gt;::_M_rehash(unsigned long, unsigned long const&amp;)</fn>
+      <dir>/usr/include/c++/13/bits</dir>
+      <file>hashtable.h</file>
+      <line>2565</line>
+    </frame>
+    <frame>
+      <ip>0x1A296B</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>std::_Hashtable&lt;unsigned long, std::pair&lt;unsigned long const, testing::internal::CallReaction&gt;, std::allocator&lt;std::pair&lt;unsigned long const, testing::internal::CallReaction&gt; &gt;, std::__detail::_Select1st, std::equal_to&lt;unsigned long&gt;, std::hash&lt;unsigned long&gt;, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits&lt;false, false, true&gt; &gt;::_M_insert_unique_node(unsigned long, unsigned long, std::__detail::_Hash_node&lt;std::pair&lt;unsigned long const, testing::internal::CallReaction&gt;, false&gt;*, unsigned long)</fn>
+      <dir>/usr/include/c++/13/bits</dir>
+      <file>hashtable.h</file>
+      <line>2179</line>
+    </frame>
+    <frame>
+      <ip>0x1A0A32</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>std::__detail::_Map_base&lt;unsigned long, std::pair&lt;unsigned long const, testing::internal::CallReaction&gt;, std::allocator&lt;std::pair&lt;unsigned long const, testing::internal::CallReaction&gt; &gt;, std::__detail::_Select1st, std::equal_to&lt;unsigned long&gt;, std::hash&lt;unsigned long&gt;, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits&lt;false, false, true&gt;, true&gt;::operator[](unsigned long const&amp;)</fn>
+      <dir>/usr/include/c++/13/bits</dir>
+      <file>hashtable_policy.h</file>
+      <line>825</line>
+    </frame>
+    <frame>
+      <ip>0x19E856</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>std::unordered_map&lt;unsigned long, testing::internal::CallReaction, std::hash&lt;unsigned long&gt;, std::equal_to&lt;unsigned long&gt;, std::allocator&lt;std::pair&lt;unsigned long const, testing::internal::CallReaction&gt; &gt; &gt;::operator[](unsigned long const&amp;)</fn>
+      <dir>/usr/include/c++/13/bits</dir>
+      <file>unordered_map.h</file>
+      <line>987</line>
+    </frame>
+    <frame>
+      <ip>0x199435</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::(anonymous namespace)::SetReactionOnUninterestingCalls(unsigned long, testing::internal::CallReaction)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googlemock/src</dir>
+      <file>gmock-spec-builders.cc</file>
+      <line>563</line>
+    </frame>
+    <frame>
+      <ip>0x1994FA</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::Mock::FailUninterestingCalls(unsigned long)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googlemock/src</dir>
+      <file>gmock-spec-builders.cc</file>
+      <line>586</line>
+    </frame>
+    <frame>
+      <ip>0x12D035</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::internal::StrictMockImpl&lt;MockOperationLogger&gt;::StrictMockImpl()</fn>
+      <dir>/workspace/build/_deps/googletest-src/googlemock/include/gmock</dir>
+      <file>gmock-nice-strict.h</file>
+      <line>138</line>
+    </frame>
+    <frame>
+      <ip>0x12AEEE</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::StrictMock&lt;MockOperationLogger&gt;::StrictMock()</fn>
+      <dir>/workspace/build/_deps/googletest-src/googlemock/include/gmock</dir>
+      <file>gmock-nice-strict.h</file>
+      <line>242</line>
+    </frame>
+    <frame>
+      <ip>0x127FF2</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>CalculatorServiceMockTest_LogsSuccessWhenExpressionIsValid_Test::TestBody()</fn>
+      <dir>/workspace/tests</dir>
+      <file>CalculatorMockTest.cpp</file>
+      <line>15</line>
+    </frame>
+    <frame>
+      <ip>0x17E650</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>void testing::internal::HandleSehExceptionsInMethodIfSupported&lt;testing::Test, void&gt;(testing::Test*, void (testing::Test::*)(), char const*)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest.cc</file>
+      <line>2638</line>
+    </frame>
+    <frame>
+      <ip>0x1761BE</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>void testing::internal::HandleExceptionsInMethodIfSupported&lt;testing::Test, void&gt;(testing::Test*, void (testing::Test::*)(), char const*)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest.cc</file>
+      <line>2674</line>
+    </frame>
+    <frame>
+      <ip>0x14D9B1</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::Test::Run()</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest.cc</file>
+      <line>2713</line>
+    </frame>
+    <frame>
+      <ip>0x14E4DB</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::TestInfo::Run()</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest.cc</file>
+      <line>2859</line>
+    </frame>
+    <frame>
+      <ip>0x14EEC7</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::TestSuite::Run()</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest.cc</file>
+      <line>3037</line>
+    </frame>
+    <frame>
+      <ip>0x16038A</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::internal::UnitTestImpl::RunAllTests()</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest.cc</file>
+      <line>5967</line>
+    </frame>
+    <frame>
+      <ip>0x17F7FD</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>bool testing::internal::HandleSehExceptionsInMethodIfSupported&lt;testing::internal::UnitTestImpl, bool&gt;(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest.cc</file>
+      <line>2638</line>
+    </frame>
+    <frame>
+      <ip>0x177656</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>bool testing::internal::HandleExceptionsInMethodIfSupported&lt;testing::internal::UnitTestImpl, bool&gt;(testing::internal::UnitTestImpl*, bool (testing::internal::UnitTestImpl::*)(), char const*)</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest.cc</file>
+      <line>2674</line>
+    </frame>
+    <frame>
+      <ip>0x15E851</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>testing::UnitTest::Run()</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest.cc</file>
+      <line>5546</line>
+    </frame>
+    <frame>
+      <ip>0x194423</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>RUN_ALL_TESTS()</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/include/gtest</dir>
+      <file>gtest.h</file>
+      <line>2334</line>
+    </frame>
+    <frame>
+      <ip>0x19440B</ip>
+      <obj>/workspace/build/calculator_tests</obj>
+      <fn>main</fn>
+      <dir>/workspace/build/_deps/googletest-src/googletest/src</dir>
+      <file>gtest_main.cc</file>
+      <line>64</line>
+    </frame>
+  </stack>
+</error>
+
+<errorcounts>
+  <pair>
+    <count>77</count>
+    <unique>0x2</unique>
+  </pair>
+  <pair>
+    <count>77</count>
+    <unique>0x1</unique>
+  </pair>
+  <pair>
+    <count>77</count>
+    <unique>0x0</unique>
+  </pair>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+

@@ -1,0 +1,435 @@
+Start testing: Jun 10 12:33 UTC
+----------------------------------------------------------
+1/16 Testing: CalculatorTest.AddsTwoPositiveNumbers
+1/16 Test: CalculatorTest.AddsTwoPositiveNumbers
+Command: "/workspace/build-asan/calculator_tests" "--gtest_filter=CalculatorTest.AddsTwoPositiveNumbers" "--gtest_also_run_disabled_tests" "--gtest_output=xml:/workspace/build-asan/test-results/CalculatorTest.AddsTwoPositiveNumbers.xml"
+Directory: /workspace/build-asan
+"CalculatorTest.AddsTwoPositiveNumbers" start time: Jun 10 12:33 UTC
+Output:
+----------------------------------------------------------
+Running main() from /workspace/build-asan/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = CalculatorTest.AddsTwoPositiveNumbers
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from CalculatorTest
+[ RUN      ] CalculatorTest.AddsTwoPositiveNumbers
+[       OK ] CalculatorTest.AddsTwoPositiveNumbers (0 ms)
+[----------] 1 test from CalculatorTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"CalculatorTest.AddsTwoPositiveNumbers" end time: Jun 10 12:33 UTC
+"CalculatorTest.AddsTwoPositiveNumbers" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/16 Testing: CalculatorTest.SubtractsNumbers
+2/16 Test: CalculatorTest.SubtractsNumbers
+Command: "/workspace/build-asan/calculator_tests" "--gtest_filter=CalculatorTest.SubtractsNumbers" "--gtest_also_run_disabled_tests" "--gtest_output=xml:/workspace/build-asan/test-results/CalculatorTest.SubtractsNumbers.xml"
+Directory: /workspace/build-asan
+"CalculatorTest.SubtractsNumbers" start time: Jun 10 12:33 UTC
+Output:
+----------------------------------------------------------
+Running main() from /workspace/build-asan/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = CalculatorTest.SubtractsNumbers
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from CalculatorTest
+[ RUN      ] CalculatorTest.SubtractsNumbers
+[       OK ] CalculatorTest.SubtractsNumbers (0 ms)
+[----------] 1 test from CalculatorTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"CalculatorTest.SubtractsNumbers" end time: Jun 10 12:33 UTC
+"CalculatorTest.SubtractsNumbers" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/16 Testing: CalculatorTest.MultipliesByZero
+3/16 Test: CalculatorTest.MultipliesByZero
+Command: "/workspace/build-asan/calculator_tests" "--gtest_filter=CalculatorTest.MultipliesByZero" "--gtest_also_run_disabled_tests" "--gtest_output=xml:/workspace/build-asan/test-results/CalculatorTest.MultipliesByZero.xml"
+Directory: /workspace/build-asan
+"CalculatorTest.MultipliesByZero" start time: Jun 10 12:33 UTC
+Output:
+----------------------------------------------------------
+Running main() from /workspace/build-asan/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = CalculatorTest.MultipliesByZero
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from CalculatorTest
+[ RUN      ] CalculatorTest.MultipliesByZero
+[       OK ] CalculatorTest.MultipliesByZero (0 ms)
+[----------] 1 test from CalculatorTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"CalculatorTest.MultipliesByZero" end time: Jun 10 12:33 UTC
+"CalculatorTest.MultipliesByZero" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/16 Testing: CalculatorTest.DividesTwoNumbers
+4/16 Test: CalculatorTest.DividesTwoNumbers
+Command: "/workspace/build-asan/calculator_tests" "--gtest_filter=CalculatorTest.DividesTwoNumbers" "--gtest_also_run_disabled_tests" "--gtest_output=xml:/workspace/build-asan/test-results/CalculatorTest.DividesTwoNumbers.xml"
+Directory: /workspace/build-asan
+"CalculatorTest.DividesTwoNumbers" start time: Jun 10 12:33 UTC
+Output:
+----------------------------------------------------------
+Running main() from /workspace/build-asan/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = CalculatorTest.DividesTwoNumbers
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from CalculatorTest
+[ RUN      ] CalculatorTest.DividesTwoNumbers
+[       OK ] CalculatorTest.DividesTwoNumbers (0 ms)
+[----------] 1 test from CalculatorTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"CalculatorTest.DividesTwoNumbers" end time: Jun 10 12:33 UTC
+"CalculatorTest.DividesTwoNumbers" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/16 Testing: CalculatorTest.ThrowsWhenDividingByZero
+5/16 Test: CalculatorTest.ThrowsWhenDividingByZero
+Command: "/workspace/build-asan/calculator_tests" "--gtest_filter=CalculatorTest.ThrowsWhenDividingByZero" "--gtest_also_run_disabled_tests" "--gtest_output=xml:/workspace/build-asan/test-results/CalculatorTest.ThrowsWhenDividingByZero.xml"
+Directory: /workspace/build-asan
+"CalculatorTest.ThrowsWhenDividingByZero" start time: Jun 10 12:33 UTC
+Output:
+----------------------------------------------------------
+Running main() from /workspace/build-asan/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = CalculatorTest.ThrowsWhenDividingByZero
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from CalculatorTest
+[ RUN      ] CalculatorTest.ThrowsWhenDividingByZero
+[       OK ] CalculatorTest.ThrowsWhenDividingByZero (12 ms)
+[----------] 1 test from CalculatorTest (12 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (12 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"CalculatorTest.ThrowsWhenDividingByZero" end time: Jun 10 12:33 UTC
+"CalculatorTest.ThrowsWhenDividingByZero" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/16 Testing: ExpressionParserTest.EvaluatesAdditionExpression
+6/16 Test: ExpressionParserTest.EvaluatesAdditionExpression
+Command: "/workspace/build-asan/calculator_tests" "--gtest_filter=ExpressionParserTest.EvaluatesAdditionExpression" "--gtest_also_run_disabled_tests" "--gtest_output=xml:/workspace/build-asan/test-results/ExpressionParserTest.EvaluatesAdditionExpression.xml"
+Directory: /workspace/build-asan
+"ExpressionParserTest.EvaluatesAdditionExpression" start time: Jun 10 12:33 UTC
+Output:
+----------------------------------------------------------
+Running main() from /workspace/build-asan/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ExpressionParserTest.EvaluatesAdditionExpression
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ExpressionParserTest
+[ RUN      ] ExpressionParserTest.EvaluatesAdditionExpression
+[       OK ] ExpressionParserTest.EvaluatesAdditionExpression (0 ms)
+[----------] 1 test from ExpressionParserTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"ExpressionParserTest.EvaluatesAdditionExpression" end time: Jun 10 12:33 UTC
+"ExpressionParserTest.EvaluatesAdditionExpression" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/16 Testing: ExpressionParserTest.IgnoresSpaces
+7/16 Test: ExpressionParserTest.IgnoresSpaces
+Command: "/workspace/build-asan/calculator_tests" "--gtest_filter=ExpressionParserTest.IgnoresSpaces" "--gtest_also_run_disabled_tests" "--gtest_output=xml:/workspace/build-asan/test-results/ExpressionParserTest.IgnoresSpaces.xml"
+Directory: /workspace/build-asan
+"ExpressionParserTest.IgnoresSpaces" start time: Jun 10 12:33 UTC
+Output:
+----------------------------------------------------------
+Running main() from /workspace/build-asan/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ExpressionParserTest.IgnoresSpaces
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ExpressionParserTest
+[ RUN      ] ExpressionParserTest.IgnoresSpaces
+[       OK ] ExpressionParserTest.IgnoresSpaces (0 ms)
+[----------] 1 test from ExpressionParserTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"ExpressionParserTest.IgnoresSpaces" end time: Jun 10 12:33 UTC
+"ExpressionParserTest.IgnoresSpaces" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/16 Testing: ExpressionParserTest.HandlesNegativeLeftOperand
+8/16 Test: ExpressionParserTest.HandlesNegativeLeftOperand
+Command: "/workspace/build-asan/calculator_tests" "--gtest_filter=ExpressionParserTest.HandlesNegativeLeftOperand" "--gtest_also_run_disabled_tests" "--gtest_output=xml:/workspace/build-asan/test-results/ExpressionParserTest.HandlesNegativeLeftOperand.xml"
+Directory: /workspace/build-asan
+"ExpressionParserTest.HandlesNegativeLeftOperand" start time: Jun 10 12:33 UTC
+Output:
+----------------------------------------------------------
+Running main() from /workspace/build-asan/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ExpressionParserTest.HandlesNegativeLeftOperand
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ExpressionParserTest
+[ RUN      ] ExpressionParserTest.HandlesNegativeLeftOperand
+[       OK ] ExpressionParserTest.HandlesNegativeLeftOperand (0 ms)
+[----------] 1 test from ExpressionParserTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"ExpressionParserTest.HandlesNegativeLeftOperand" end time: Jun 10 12:33 UTC
+"ExpressionParserTest.HandlesNegativeLeftOperand" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/16 Testing: ExpressionParserTest.RejectsUnknownExpression
+9/16 Test: ExpressionParserTest.RejectsUnknownExpression
+Command: "/workspace/build-asan/calculator_tests" "--gtest_filter=ExpressionParserTest.RejectsUnknownExpression" "--gtest_also_run_disabled_tests" "--gtest_output=xml:/workspace/build-asan/test-results/ExpressionParserTest.RejectsUnknownExpression.xml"
+Directory: /workspace/build-asan
+"ExpressionParserTest.RejectsUnknownExpression" start time: Jun 10 12:33 UTC
+Output:
+----------------------------------------------------------
+Running main() from /workspace/build-asan/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ExpressionParserTest.RejectsUnknownExpression
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ExpressionParserTest
+[ RUN      ] ExpressionParserTest.RejectsUnknownExpression
+[       OK ] ExpressionParserTest.RejectsUnknownExpression (0 ms)
+[----------] 1 test from ExpressionParserTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"ExpressionParserTest.RejectsUnknownExpression" end time: Jun 10 12:33 UTC
+"ExpressionParserTest.RejectsUnknownExpression" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/16 Testing: CalculatorServiceMockTest.LogsSuccessWhenExpressionIsValid
+10/16 Test: CalculatorServiceMockTest.LogsSuccessWhenExpressionIsValid
+Command: "/workspace/build-asan/calculator_tests" "--gtest_filter=CalculatorServiceMockTest.LogsSuccessWhenExpressionIsValid" "--gtest_also_run_disabled_tests" "--gtest_output=xml:/workspace/build-asan/test-results/CalculatorServiceMockTest.LogsSuccessWhenExpressionIsValid.xml"
+Directory: /workspace/build-asan
+"CalculatorServiceMockTest.LogsSuccessWhenExpressionIsValid" start time: Jun 10 12:33 UTC
+Output:
+----------------------------------------------------------
+Running main() from /workspace/build-asan/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = CalculatorServiceMockTest.LogsSuccessWhenExpressionIsValid
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from CalculatorServiceMockTest
+[ RUN      ] CalculatorServiceMockTest.LogsSuccessWhenExpressionIsValid
+[       OK ] CalculatorServiceMockTest.LogsSuccessWhenExpressionIsValid (1 ms)
+[----------] 1 test from CalculatorServiceMockTest (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (2 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"CalculatorServiceMockTest.LogsSuccessWhenExpressionIsValid" end time: Jun 10 12:33 UTC
+"CalculatorServiceMockTest.LogsSuccessWhenExpressionIsValid" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/16 Testing: CalculatorServiceMockTest.LogsFailureWhenExpressionIsInvalid
+11/16 Test: CalculatorServiceMockTest.LogsFailureWhenExpressionIsInvalid
+Command: "/workspace/build-asan/calculator_tests" "--gtest_filter=CalculatorServiceMockTest.LogsFailureWhenExpressionIsInvalid" "--gtest_also_run_disabled_tests" "--gtest_output=xml:/workspace/build-asan/test-results/CalculatorServiceMockTest.LogsFailureWhenExpressionIsInvalid.xml"
+Directory: /workspace/build-asan
+"CalculatorServiceMockTest.LogsFailureWhenExpressionIsInvalid" start time: Jun 10 12:33 UTC
+Output:
+----------------------------------------------------------
+Running main() from /workspace/build-asan/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = CalculatorServiceMockTest.LogsFailureWhenExpressionIsInvalid
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from CalculatorServiceMockTest
+[ RUN      ] CalculatorServiceMockTest.LogsFailureWhenExpressionIsInvalid
+[       OK ] CalculatorServiceMockTest.LogsFailureWhenExpressionIsInvalid (2 ms)
+[----------] 1 test from CalculatorServiceMockTest (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (2 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"CalculatorServiceMockTest.LogsFailureWhenExpressionIsInvalid" end time: Jun 10 12:33 UTC
+"CalculatorServiceMockTest.LogsFailureWhenExpressionIsInvalid" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/16 Testing: NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_1_2  # GetParam() = 40-byte object <E0-09 00-00 40-50 00-00 03-00 00-00 00-00 00-00 31-2B 32-00 BE-BE BE-BE BE-BE BE-BE BE-BE BE-BE 03-00 00-00 BE-BE BE-BE>
+12/16 Test: NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_1_2  # GetParam() = 40-byte object <E0-09 00-00 40-50 00-00 03-00 00-00 00-00 00-00 31-2B 32-00 BE-BE BE-BE BE-BE BE-BE BE-BE BE-BE 03-00 00-00 BE-BE BE-BE>
+Command: "/workspace/build-asan/calculator_tests" "--gtest_filter=NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_1_2" "--gtest_also_run_disabled_tests" "--gtest_output=xml:/workspace/build-asan/test-results/NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_1_2.xml"
+Directory: /workspace/build-asan
+"NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_1_2  # GetParam() = 40-byte object <E0-09 00-00 40-50 00-00 03-00 00-00 00-00 00-00 31-2B 32-00 BE-BE BE-BE BE-BE BE-BE BE-BE BE-BE 03-00 00-00 BE-BE BE-BE>" start time: Jun 10 12:33 UTC
+Output:
+----------------------------------------------------------
+Running main() from /workspace/build-asan/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_1_2
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NominalExpressions/ExpressionParameterizedTest
+[ RUN      ] NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_1_2
+[       OK ] NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_1_2 (0 ms)
+[----------] 1 test from NominalExpressions/ExpressionParameterizedTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_1_2  # GetParam() = 40-byte object <E0-09 00-00 40-50 00-00 03-00 00-00 00-00 00-00 31-2B 32-00 BE-BE BE-BE BE-BE BE-BE BE-BE BE-BE 03-00 00-00 BE-BE BE-BE>" end time: Jun 10 12:33 UTC
+"NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_1_2  # GetParam() = 40-byte object <E0-09 00-00 40-50 00-00 03-00 00-00 00-00 00-00 31-2B 32-00 BE-BE BE-BE BE-BE BE-BE BE-BE BE-BE 03-00 00-00 BE-BE BE-BE>" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/16 Testing: NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_10_4  # GetParam() = 40-byte object <20-0B 00-00 40-50 00-00 04-00 00-00 00-00 00-00 31-30 2D-34 00-BE BE-BE BE-BE BE-BE BE-BE BE-BE 06-00 00-00 BE-BE BE-BE>
+13/16 Test: NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_10_4  # GetParam() = 40-byte object <20-0B 00-00 40-50 00-00 04-00 00-00 00-00 00-00 31-30 2D-34 00-BE BE-BE BE-BE BE-BE BE-BE BE-BE 06-00 00-00 BE-BE BE-BE>
+Command: "/workspace/build-asan/calculator_tests" "--gtest_filter=NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_10_4" "--gtest_also_run_disabled_tests" "--gtest_output=xml:/workspace/build-asan/test-results/NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_10_4.xml"
+Directory: /workspace/build-asan
+"NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_10_4  # GetParam() = 40-byte object <20-0B 00-00 40-50 00-00 04-00 00-00 00-00 00-00 31-30 2D-34 00-BE BE-BE BE-BE BE-BE BE-BE BE-BE 06-00 00-00 BE-BE BE-BE>" start time: Jun 10 12:33 UTC
+Output:
+----------------------------------------------------------
+Running main() from /workspace/build-asan/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_10_4
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NominalExpressions/ExpressionParameterizedTest
+[ RUN      ] NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_10_4
+[       OK ] NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_10_4 (0 ms)
+[----------] 1 test from NominalExpressions/ExpressionParameterizedTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_10_4  # GetParam() = 40-byte object <20-0B 00-00 40-50 00-00 04-00 00-00 00-00 00-00 31-30 2D-34 00-BE BE-BE BE-BE BE-BE BE-BE BE-BE 06-00 00-00 BE-BE BE-BE>" end time: Jun 10 12:33 UTC
+"NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_10_4  # GetParam() = 40-byte object <20-0B 00-00 40-50 00-00 04-00 00-00 00-00 00-00 31-30 2D-34 00-BE BE-BE BE-BE BE-BE BE-BE BE-BE 06-00 00-00 BE-BE BE-BE>" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/16 Testing: NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_6_7  # GetParam() = 40-byte object <E0-0B 00-00 40-50 00-00 03-00 00-00 00-00 00-00 36-2A 37-00 BE-BE BE-BE BE-BE BE-BE BE-BE BE-BE 2A-00 00-00 BE-BE BE-BE>
+14/16 Test: NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_6_7  # GetParam() = 40-byte object <E0-0B 00-00 40-50 00-00 03-00 00-00 00-00 00-00 36-2A 37-00 BE-BE BE-BE BE-BE BE-BE BE-BE BE-BE 2A-00 00-00 BE-BE BE-BE>
+Command: "/workspace/build-asan/calculator_tests" "--gtest_filter=NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_6_7" "--gtest_also_run_disabled_tests" "--gtest_output=xml:/workspace/build-asan/test-results/NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_6_7.xml"
+Directory: /workspace/build-asan
+"NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_6_7  # GetParam() = 40-byte object <E0-0B 00-00 40-50 00-00 03-00 00-00 00-00 00-00 36-2A 37-00 BE-BE BE-BE BE-BE BE-BE BE-BE BE-BE 2A-00 00-00 BE-BE BE-BE>" start time: Jun 10 12:33 UTC
+Output:
+----------------------------------------------------------
+Running main() from /workspace/build-asan/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_6_7
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NominalExpressions/ExpressionParameterizedTest
+[ RUN      ] NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_6_7
+[       OK ] NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_6_7 (0 ms)
+[----------] 1 test from NominalExpressions/ExpressionParameterizedTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_6_7  # GetParam() = 40-byte object <E0-0B 00-00 40-50 00-00 03-00 00-00 00-00 00-00 36-2A 37-00 BE-BE BE-BE BE-BE BE-BE BE-BE BE-BE 2A-00 00-00 BE-BE BE-BE>" end time: Jun 10 12:33 UTC
+"NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_6_7  # GetParam() = 40-byte object <E0-0B 00-00 40-50 00-00 03-00 00-00 00-00 00-00 36-2A 37-00 BE-BE BE-BE BE-BE BE-BE BE-BE BE-BE 2A-00 00-00 BE-BE BE-BE>" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/16 Testing: NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_20_5  # GetParam() = 40-byte object <A0-0C 00-00 40-50 00-00 04-00 00-00 00-00 00-00 32-30 2F-35 00-BE BE-BE BE-BE BE-BE BE-BE BE-BE 04-00 00-00 BE-BE BE-BE>
+15/16 Test: NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_20_5  # GetParam() = 40-byte object <A0-0C 00-00 40-50 00-00 04-00 00-00 00-00 00-00 32-30 2F-35 00-BE BE-BE BE-BE BE-BE BE-BE BE-BE 04-00 00-00 BE-BE BE-BE>
+Command: "/workspace/build-asan/calculator_tests" "--gtest_filter=NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_20_5" "--gtest_also_run_disabled_tests" "--gtest_output=xml:/workspace/build-asan/test-results/NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_20_5.xml"
+Directory: /workspace/build-asan
+"NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_20_5  # GetParam() = 40-byte object <A0-0C 00-00 40-50 00-00 04-00 00-00 00-00 00-00 32-30 2F-35 00-BE BE-BE BE-BE BE-BE BE-BE BE-BE 04-00 00-00 BE-BE BE-BE>" start time: Jun 10 12:33 UTC
+Output:
+----------------------------------------------------------
+Running main() from /workspace/build-asan/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_20_5
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NominalExpressions/ExpressionParameterizedTest
+[ RUN      ] NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_20_5
+[       OK ] NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_20_5 (0 ms)
+[----------] 1 test from NominalExpressions/ExpressionParameterizedTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_20_5  # GetParam() = 40-byte object <A0-0C 00-00 40-50 00-00 04-00 00-00 00-00 00-00 32-30 2F-35 00-BE BE-BE BE-BE BE-BE BE-BE BE-BE 04-00 00-00 BE-BE BE-BE>" end time: Jun 10 12:33 UTC
+"NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_20_5  # GetParam() = 40-byte object <A0-0C 00-00 40-50 00-00 04-00 00-00 00-00 00-00 32-30 2F-35 00-BE BE-BE BE-BE BE-BE BE-BE BE-BE 04-00 00-00 BE-BE BE-BE>" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/16 Testing: NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr__8_2  # GetParam() = 40-byte object <60-0D 00-00 40-50 00-00 04-00 00-00 00-00 00-00 2D-38 2F-32 00-BE BE-BE BE-BE BE-BE BE-BE BE-BE FC-FF FF-FF BE-BE BE-BE>
+16/16 Test: NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr__8_2  # GetParam() = 40-byte object <60-0D 00-00 40-50 00-00 04-00 00-00 00-00 00-00 2D-38 2F-32 00-BE BE-BE BE-BE BE-BE BE-BE BE-BE FC-FF FF-FF BE-BE BE-BE>
+Command: "/workspace/build-asan/calculator_tests" "--gtest_filter=NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr__8_2" "--gtest_also_run_disabled_tests" "--gtest_output=xml:/workspace/build-asan/test-results/NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr__8_2.xml"
+Directory: /workspace/build-asan
+"NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr__8_2  # GetParam() = 40-byte object <60-0D 00-00 40-50 00-00 04-00 00-00 00-00 00-00 2D-38 2F-32 00-BE BE-BE BE-BE BE-BE BE-BE BE-BE FC-FF FF-FF BE-BE BE-BE>" start time: Jun 10 12:33 UTC
+Output:
+----------------------------------------------------------
+Running main() from /workspace/build-asan/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr__8_2
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NominalExpressions/ExpressionParameterizedTest
+[ RUN      ] NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr__8_2
+[       OK ] NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr__8_2 (0 ms)
+[----------] 1 test from NominalExpressions/ExpressionParameterizedTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr__8_2  # GetParam() = 40-byte object <60-0D 00-00 40-50 00-00 04-00 00-00 00-00 00-00 2D-38 2F-32 00-BE BE-BE BE-BE BE-BE BE-BE BE-BE FC-FF FF-FF BE-BE BE-BE>" end time: Jun 10 12:33 UTC
+"NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr__8_2  # GetParam() = 40-byte object <60-0D 00-00 40-50 00-00 04-00 00-00 00-00 00-00 2D-38 2F-32 00-BE BE-BE BE-BE BE-BE BE-BE BE-BE FC-FF FF-FF BE-BE BE-BE>" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jun 10 12:33 UTC

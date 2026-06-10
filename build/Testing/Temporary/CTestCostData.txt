@@ -1,0 +1,42 @@
+CalculatorTest.AddsTwoPositiveNumbers 6 0.00216513
+CalculatorTest.SubtractsNumbers 6 0.00205718
+CalculatorTest.MultipliesByZero 6 0.00242283
+CalculatorTest.DividesTwoNumbers 6 0.00201474
+CalculatorTest.ThrowsWhenDividingByZero 6 0.00216387
+ExpressionParserTest.EvaluatesAdditionExpression 6 0.00207688
+ExpressionParserTest.IgnoresSpaces 6 0.00203407
+ExpressionParserTest.HandlesNegativeLeftOperand 6 0.00215561
+ExpressionParserTest.RejectsUnknownExpression 6 0.00214043
+CalculatorServiceMockTest.LogsSuccessWhenExpressionIsValid 6 0.00211543
+CalculatorServiceMockTest.LogsFailureWhenExpressionIsInvalid 6 0.00233849
+NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_1_2 0 0
+NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_10_4 0 0
+NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_6_7 0 0
+NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_20_5 0 0
+NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr__8_2 0 0
+NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_1_2 0 0
+NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_10_4 0 0
+NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_6_7 0 0
+NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_20_5 0 0
+NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr__8_2 0 0
+NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_1_2 0 0
+NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_10_4 0 0
+NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_6_7 0 0
+NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_20_5 0 0
+NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr__8_2 0 0
+NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_1_2 0 0
+NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_10_4 0 0
+NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_6_7 0 0
+NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_20_5 0 0
+NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr__8_2 0 0
+NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_1_2 0 0
+NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_10_4 0 0
+NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_6_7 0 0
+NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_20_5 0 0
+NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr__8_2 0 0
+NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_1_2  # GetParam() = 40-byte object <90-6B 5D-C0 60-59 00-00 03-00 00-00 00-00 00-00 31-2B 32-00 00-00 00-00 00-00 00-00 00-00 00-00 03-00 00-00 00-00 00-00> 1 0.0149498
+NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_10_4  # GetParam() = 40-byte object <90-6B 5D-C0 60-59 00-00 04-00 00-00 00-00 00-00 31-30 2D-34 00-00 00-00 00-00 00-00 00-00 00-00 06-00 00-00 00-00 00-00> 1 0.0143619
+NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_6_7  # GetParam() = 40-byte object <90-6B 5D-C0 60-59 00-00 03-00 00-00 00-00 00-00 36-2A 37-00 00-00 00-00 00-00 00-00 00-00 00-00 2A-00 00-00 00-00 00-00> 1 0.0137086
+NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr_20_5  # GetParam() = 40-byte object <90-6B 5D-C0 60-59 00-00 04-00 00-00 00-00 00-00 32-30 2F-35 00-00 00-00 00-00 00-00 00-00 00-00 04-00 00-00 00-00 00-00> 1 0.0148466
+NominalExpressions/ExpressionParameterizedTest.EvaluatesExpression/expr__8_2  # GetParam() = 40-byte object <90-6B 5D-C0 60-59 00-00 04-00 00-00 00-00 00-00 2D-38 2F-32 00-00 00-00 00-00 00-00 00-00 00-00 FC-FF FF-FF 00-00 00-00> 1 0.0145077
+---

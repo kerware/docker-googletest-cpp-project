@@ -1,0 +1,47 @@
+name: docker-cpp-tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  docker-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build Docker image with Docker Compose
+        run: docker compose build
+
+      - name: Run tests with Docker Compose
+        run: docker compose run --rm cpp-tests
+
+      - name: Run static analysis
+        run: docker compose run --rm static-analysis
+
+      - name: Run sanitizer build
+        run: docker compose run --rm sanitizers
+
+      - name: Generate coverage report
+        run: docker compose run --rm coverage
+
+      - name: Upload reports
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: reports
+          path: reports/
+
+      - name: Upload clang-tidy report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: clang-tidy-report
+          path: reports/clang-tidy/
+
+      - name: Upload valgrind report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: valgrind-report
+          path: reports/valgrind/

@@ -1,0 +1,138 @@
+[1/11] Processing file /workspace/src/Calculator.cpp.
+13409 warnings generated.
+[2/11] Processing file /workspace/src/CalculatorService.cpp.
+26755 warnings generated.
+[3/11] Processing file /workspace/src/ExpressionParser.cpp.
+40173 warnings generated.
+[4/11] Processing file /workspace/src/main.cpp.
+58365 warnings generated.
+[5/11] Processing file /workspace/include/Calculator.hpp.
+71766 warnings generated.
+[6/11] Processing file /workspace/include/ExpressionParser.hpp.
+84938 warnings generated.
+[7/11] Processing file /workspace/include/OperationLogger.hpp.
+98110 warnings generated.
+[8/11] Processing file /workspace/tests/CalculatorMockTest.cpp.
+154689 warnings generated.
+[9/11] Processing file /workspace/tests/CalculatorParameterizedTest.cpp.
+202962 warnings generated.
+[10/11] Processing file /workspace/tests/CalculatorTest.cpp.
+249965 warnings generated.
+[11/11] Processing file /workspace/tests/ExpressionParserTest.cpp.
+296959 warnings generated.
+/workspace/include/Calculator.hpp:7:5: warning: function 'add' should be marked [[nodiscard]] [modernize-use-nodiscard]
+    7 |     int add(int left, int right) const;
+      |     ^
+      |     [[nodiscard]] 
+/workspace/include/Calculator.hpp:7:9: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+    7 |     int add(int left, int right) const;
+      |     ~~~ ^                             
+      |     auto                               -> int
+/workspace/include/Calculator.hpp:8:5: warning: function 'subtract' should be marked [[nodiscard]] [modernize-use-nodiscard]
+    8 |     int subtract(int left, int right) const;
+      |     ^
+      |     [[nodiscard]] 
+/workspace/include/Calculator.hpp:8:9: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+    8 |     int subtract(int left, int right) const;
+      |     ~~~ ^                                  
+      |     auto                                    -> int
+/workspace/include/Calculator.hpp:9:5: warning: function 'multiply' should be marked [[nodiscard]] [modernize-use-nodiscard]
+    9 |     int multiply(int left, int right) const;
+      |     ^
+      |     [[nodiscard]] 
+/workspace/include/Calculator.hpp:9:9: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+    9 |     int multiply(int left, int right) const;
+      |     ~~~ ^                                  
+      |     auto                                    -> int
+/workspace/include/Calculator.hpp:10:5: warning: function 'divide' should be marked [[nodiscard]] [modernize-use-nodiscard]
+   10 |     int divide(int left, int right) const;
+      |     ^
+      |     [[nodiscard]] 
+/workspace/include/Calculator.hpp:10:9: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+   10 |     int divide(int left, int right) const;
+      |     ~~~ ^                                
+      |     auto                                  -> int
+/workspace/include/ExpressionParser.hpp:7:5: warning: function 'evaluate' should be marked [[nodiscard]] [modernize-use-nodiscard]
+    7 |     int evaluate(const std::string& expression) const;
+      |     ^
+      |     [[nodiscard]] 
+/workspace/include/ExpressionParser.hpp:7:9: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+    7 |     int evaluate(const std::string& expression) const;
+      |     ~~~ ^                                            
+      |     auto                                              -> int
+/workspace/include/OperationLogger.hpp:16:5: warning: function 'evaluate' should be marked [[nodiscard]] [modernize-use-nodiscard]
+   16 |     int evaluate(const std::string& expression) const;
+      |     ^
+      |     [[nodiscard]] 
+/workspace/include/OperationLogger.hpp:16:9: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+   16 |     int evaluate(const std::string& expression) const;
+      |     ~~~ ^                                            
+      |     auto                                              -> int
+/workspace/src/Calculator.cpp:3:17: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+    3 | int Calculator::add(int left, int right) const {
+      |                 ^
+note: this fix will not be applied because it overlaps with another fix
+/workspace/src/Calculator.cpp:3:17: warning: method 'add' can be made static [readability-convert-member-functions-to-static]
+    3 | int Calculator::add(int left, int right) const {
+      |                 ^                        ~~~~~
+/workspace/src/Calculator.cpp:7:17: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+    7 | int Calculator::subtract(int left, int right) const {
+      |                 ^
+note: this fix will not be applied because it overlaps with another fix
+/workspace/src/Calculator.cpp:7:17: warning: method 'subtract' can be made static [readability-convert-member-functions-to-static]
+    7 | int Calculator::subtract(int left, int right) const {
+      |                 ^                             ~~~~~
+/workspace/src/Calculator.cpp:11:17: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+   11 | int Calculator::multiply(int left, int right) const {
+      |                 ^
+note: this fix will not be applied because it overlaps with another fix
+/workspace/src/Calculator.cpp:11:17: warning: method 'multiply' can be made static [readability-convert-member-functions-to-static]
+   11 | int Calculator::multiply(int left, int right) const {
+      |                 ^                             ~~~~~
+/workspace/src/Calculator.cpp:15:17: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+   15 | int Calculator::divide(int left, int right) const {
+      |                 ^
+note: this fix will not be applied because it overlaps with another fix
+/workspace/src/Calculator.cpp:15:17: warning: method 'divide' can be made static [readability-convert-member-functions-to-static]
+   15 | int Calculator::divide(int left, int right) const {
+      |                 ^                           ~~~~~
+/workspace/src/CalculatorService.cpp:7:24: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+    7 | int CalculatorService::evaluate(const std::string& expression) const {
+      | ~~~                    ^
+      | auto                                                                 -> int
+/workspace/src/ExpressionParser.cpp:10:13: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+   10 | std::string removeSpaces(const std::string& input) {
+      | ~~~~~~~~~~~ ^
+      | auto                                               -> std::string
+/workspace/src/ExpressionParser.cpp:13:14: warning: implicit conversion 'int' -> 'bool' [readability-implicit-bool-conversion]
+   13 |         if (!std::isspace(static_cast<unsigned char>(character))) {
+      |             ~^                                                  
+      |                                                                  == 0
+/workspace/src/ExpressionParser.cpp:20:5: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+   20 | int parseInteger(const std::string& value) {
+      | ~~~ ^
+      | auto                                       -> int
+/workspace/src/ExpressionParser.cpp:40:23: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+   40 | int ExpressionParser::evaluate(const std::string& expression) const {
+      |                       ^
+note: this fix will not be applied because it overlaps with another fix
+/workspace/src/ExpressionParser.cpp:40:23: warning: method 'evaluate' can be made static [readability-convert-member-functions-to-static]
+   40 | int ExpressionParser::evaluate(const std::string& expression) const {
+      |                       ^                                       ~~~~~
+/workspace/src/ExpressionParser.cpp:47:10: warning: variable name 'op' is too short, expected at least 3 characters [readability-identifier-length]
+   47 |     char op = '\0';
+      |          ^
+/workspace/src/main.cpp:7:5: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+    7 | int main(int argc, char** argv) {
+      | ~~~ ^
+      | auto                            -> int
+/workspace/tests/CalculatorParameterizedTest.cpp:21:13: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+   21 | std::string PrintExpressionCase(const ::testing::TestParamInfo<ExpressionCase>& info) {
+      | ~~~~~~~~~~~ ^
+      | auto                                                                                  -> std::string
+/workspace/tests/CalculatorParameterizedTest.cpp:24:14: warning: implicit conversion 'int' -> 'bool' [readability-implicit-bool-conversion]
+   24 |         if (!std::isalnum(static_cast<unsigned char>(character))) {
+      |             ~^                                                  
+      |                                                                  == 0
+Suppressed 297125 warnings (296891 in non-user code, 234 NOLINT).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
