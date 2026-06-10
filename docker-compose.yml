@@ -101,6 +101,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
       - .:/workspace:cached
       - .:/var/jenkins_home/workspace/docker-googletest-cpp-project:cached
+      - .:/host_mnt/c/projets/docker-googletest-cpp-project:cached
 
 volumes:
   jenkins_home:

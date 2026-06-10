@@ -13,42 +13,42 @@ pipeline {
     }
     stage('Verify environment') {
       steps {
-        sh 'pwd && ls -la && docker compose version && docker version'
+        sh 'cd /host_mnt/c/projets/docker-googletest-cpp-project && pwd && ls -la && docker compose version && docker version'
       }
     }
     stage('Build images') {
       steps {
-        sh 'docker compose build'
+        sh 'cd /host_mnt/c/projets/docker-googletest-cpp-project && docker compose build'
       }
     }
     stage('Unit tests') {
       steps {
-        sh 'docker compose run --rm cpp-tests'
+        sh 'cd /host_mnt/c/projets/docker-googletest-cpp-project && docker compose run --rm cpp-tests'
       }
     }
     stage('Static analysis') {
       steps {
-        sh 'docker compose run --rm static-analysis'
+        sh 'cd /host_mnt/c/projets/docker-googletest-cpp-project && docker compose run --rm static-analysis'
       }
     }
     stage('Clang-Tidy') {
       steps {
-        sh 'docker compose run --rm clang-tidy'
+        sh 'cd /host_mnt/c/projets/docker-googletest-cpp-project && docker compose run --rm clang-tidy'
       }
     }
     stage('Valgrind') {
       steps {
-        sh 'docker compose run --rm valgrind'
+        sh 'cd /host_mnt/c/projets/docker-googletest-cpp-project && docker compose run --rm valgrind'
       }
     }
     stage('Coverage') {
       steps {
-        sh 'docker compose run --rm coverage'
+        sh 'cd /host_mnt/c/projets/docker-googletest-cpp-project && docker compose run --rm coverage'
       }
     }
     stage('Sanitizers') {
       steps {
-        sh 'docker compose run --rm sanitizers'
+        sh 'cd /host_mnt/c/projets/docker-googletest-cpp-project && docker compose run --rm sanitizers'
       }
     }
   }
