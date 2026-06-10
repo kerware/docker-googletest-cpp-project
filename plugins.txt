@@ -1,0 +1,7 @@
+workflow-aggregator
+workflow-multibranch
+git
+git-client
+docker-workflow
+credentials-binding
+pipeline-model-definition

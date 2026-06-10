@@ -12,6 +12,10 @@ RUN apt-get update \
 RUN curl -SL https://github.com/docker/compose/releases/download/v2.18.1/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose \
     && chmod +x /usr/local/bin/docker-compose
 
+# Install Jenkins Pipeline plugins so pipeline jobs are available
+COPY plugins.txt /usr/share/jenkins/ref/plugins.txt
+RUN jenkins-plugin-cli -f /usr/share/jenkins/ref/plugins.txt
+
 RUN usermod -aG docker jenkins
 
 USER jenkins
